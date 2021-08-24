@@ -26,13 +26,6 @@ export default function Layout ({ children, home }) {
             </header>
 
             <main>{children}</main>
-            {!home && (
-                <div className={styles.backHome}>
-                    <Link href="/">
-                        <a>← Back to home</a>
-                    </Link>
-                </div>
-            )}
 
             <footer className={styles.footer}>
                 This site is built with <a href="https://nextjs.org/" className={styles.underline}>Next.js</a> and CSS Grid,
