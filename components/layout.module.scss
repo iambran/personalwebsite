@@ -1,18 +1,21 @@
+$maxContentWidth: 95vw;
+
 .grid {
-  max-width: 95vw;
+  max-width: $maxContentWidth;
   min-height: 100vh;
-  padding: 3rem 0 0 0;
+  padding: 0;
   margin: 0 auto;
   display: grid;
 
   // min-content allows me to set a fixed height to my footer
-  grid-template-rows: 1fr auto min-content;
+  grid-template-rows: min-content auto min-content;
 }
   
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
   
 .backToHome {

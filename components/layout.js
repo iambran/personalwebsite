@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from './layout.module.scss'
-import utilStyles from '../styles/utils.module.scss'
 import Link from 'next/link'
 
 const name = 'Brandon Zhang'
@@ -23,40 +22,7 @@ export default function Layout ({ children, home }) {
             </Head>
 
             <header className={styles.header}>
-                {home ? (
-                    <>
-                        <Image
-                            priority
-                            src="/images/brandon-zhang.jpg"
-                            className={utilStyles.profile}
-                            width="612"
-                            height="300"
-                            alt={name}
-                        />
-                    </>
-                ) : (
-                    <>
-                        <Link href="/">
-                            <a>
-                                <Image
-                                    priority
-                                    src="/images/brandon-zhang.jpg"
-                                    className={utilStyles.borderCircle}
-                                    height={108}
-                                    width={108}
-                                    alt={name}
-                                />
-                            </a>
-                        </Link>
-
-                        <h2 className={utilStyles.headingLg}>
-                            <Link href="/">
-                                <a className={utilStyles.colorInherit}>{name}</a>
-                            </Link>
-                        </h2>
-                    </>
-                )
-                }
+                menu goes here
             </header>
 
             <main>{children}</main>
