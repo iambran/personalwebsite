@@ -12,7 +12,7 @@ export const siteTitle = 'Brandon Zhang - Front-End Web Developer'
 
 export default function Layout ({ children, home }) {
     return (
-        <div className={styles.container}>
+        <div className={styles.grid}>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <meta 
@@ -28,8 +28,9 @@ export default function Layout ({ children, home }) {
                         <Image
                             priority
                             src="/images/brandon-zhang.jpg"
-                            height={144}
-                            width={144}
+                            className={utilStyles.profile}
+                            width="612"
+                            height="300"
                             alt={name}
                         />
                     </>
@@ -66,6 +67,12 @@ export default function Layout ({ children, home }) {
                     </Link>
                 </div>
             )}
+
+            <footer className={styles.footer}>
+                This site is built with <a href="https://nextjs.org/" className={styles.underline}>Next.js</a> and CSS Grid,
+                hosted on <a href="https://www.netlify.com/" className={styles.underline}>Netlify</a>.
+                The source code is available on <a href="https://github.com/iambran/personalwebsite" className={styles.underline}>Github</a>.
+            </footer>
         </div>
     )
 }

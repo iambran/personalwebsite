@@ -1,15 +1,32 @@
-.container {
-    max-width: 36rem;
-    padding: 0 1rem;
-    margin: 3rem auto 6rem;
-  }
+.grid {
+  max-width: 95vw;
+  min-height: 100vh;
+  padding: 3rem 0 0 0;
+  margin: 0 auto;
+  display: grid;
+
+  // min-content allows me to set a fixed height to my footer
+  grid-template-rows: 1fr auto min-content;
+}
   
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   
-  .backToHome {
-    margin: 3rem 0 0;
-  }
+.backToHome {
+  margin: 3rem 0 0;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.footer {
+  width: 100%;
+  border-top: 1px solid #eaeaea;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 1rem 0;
+}
