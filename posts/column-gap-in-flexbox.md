@@ -22,55 +22,73 @@ button {
 }
 ```
 
-# Use case #2 - Replace margin to set gap between flex item.
+# Use case #2 - nav menu
 
-HTML
-```
-<main>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</main>
+Say we need to design a header, logo on the left and nav menu on the right, we will set up a markup like this:
+
+html
+```html
+<header>
+    <div>Logo</div>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Product</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</header>
 ```
 
-CSS (old ways)
-```
-main {
+And, with css
+
+```css
+header {
     display: flex;
-    flex-wrap: wrap;
+    align-item: center;
+    justify-content: space-between;
 }
 
-main > div {
-    --columns-per-row: 4;
-    --gaps-per-row: calc(var(--columns-per-row) - 1);
-    --column-gap: 10px;
-    --total-gaps-width: calc(var(--gaps-per-row) * var(--column-gap));
-    width: calc(100%  * var(--total-gaps-width) / var(--columns-per-row));
-    margin-bottom: var(--column-gap);
+ul {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
 }
 
-main > div:first-child {
+li {
+    margin-right: 15px;
+}
+
+li:last-of-type {
     margin-right: 0;
 }
-
-/* c = var(--columns-per-row) 
-   does this work?
-*/
-main > div:not(:nth-child(cn+1)) {
-    margin-left: var(--column-gap);
-}
 ```
 
-CSS with gap
-```
-main {
+If we bring in gap
+```css
+header {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    align-item: center;
+    justify-content: space-between;
 }
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    gap: 15px;
+}
+
+/* these two codes will not be needed
+li {
+    margin-right: 15px;
+}
+
+li:last-of-type {
+    margin-right: 0;
+}
+*/
 ```

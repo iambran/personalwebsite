@@ -19,6 +19,10 @@ export default function Layout ({ children, home }) {
                     content="Brandon Zhang - Front-End Web Developer"
                 />
                 <meta name="og:title" content={siteTitle} />
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+                <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet" />
+                
             </Head>
 
             <header className={styles.header}>

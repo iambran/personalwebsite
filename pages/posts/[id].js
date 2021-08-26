@@ -3,6 +3,7 @@ import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.scss'
+import Link from 'next/link'
 
 export async function getStaticProps({ params }) {
     const postData = await getPostData(params.id)
@@ -35,6 +36,9 @@ export default function Post({ postData }) {
                 <Date dateString={postData.date} />
             </div>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            <Link href="/">
+              <a>Back to home</a>
+            </Link>
         </article>
 
       </Layout>
