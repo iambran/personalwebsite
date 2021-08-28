@@ -21,6 +21,7 @@ export default function Layout() {
                     <Image 
                     src="https://images.unsplash.com/photo-1488654715439-fbf461f0eb8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
                     layout="fill"    
+                    alt="an image from Unsplash"
                     />
                 </div>
 
@@ -32,6 +33,7 @@ export default function Layout() {
                     <Image 
                     src="https://images.unsplash.com/photo-1629910036733-5632b57da4b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80"
                     layout="fill"
+                    alt="an image from Unsplash"
                     />
                 </div>
                 
@@ -40,7 +42,11 @@ export default function Layout() {
                     <p>Fusce efficitur porttitor placerat.</p>
                 </div>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1504600770771-fb03a6961d33?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1102&q=80" />
+                    <Image 
+                    src="https://images.unsplash.com/photo-1504600770771-fb03a6961d33?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1102&q=80" 
+                    layout="fill"
+                    alt="an image from Unsplash"
+                    />
                 </div>
                 
 
@@ -49,7 +55,11 @@ export default function Layout() {
                     <p>Duis aliquet neque et nisl euismod, non efficitur velit viverra.</p>
                 </div>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1596520093084-e527c9c388ca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2689&q=80" />
+                    <Image 
+                    src="https://images.unsplash.com/photo-1596520093084-e527c9c388ca?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2689&q=80" 
+                    layout="fill"
+                    alt="an image from Unsplash"
+                    />
                 </div>
 
 
