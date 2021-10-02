@@ -26,20 +26,18 @@ export default function Home({ allPostsData }) {
       </Head>
 
       <section className={utilStyles.headingMd, utilStyles.welcome}>
-        <Image
+        {/* <Image
           priority
           src="/images/brandon-zhang.jpg"
           className={utilStyles.profile}
           layout="fill"
           alt="Brandon Zhang"
-        />
-        <p>Hello, I'm Brandon. I'm a front-end web developer and a Wordpress developer based in Fuzhou, China.</p>
-        <p></p>
+        /> */}
 
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h1 className={utilStyles.headingXl}>Blog</h1>
         <ul className={utilStyles.list}>
           {allPostsData.map(({id, date, title}) => (
             <li className={utilStyles.listItem} key={id}>

@@ -26,15 +26,15 @@ export default function Layout ({ children, home }) {
             </Head>
 
             <header className={styles.header}>
-                menu goes here
+                
             </header>
 
             <main>{children}</main>
 
             <footer className={styles.footer}>
-                This site is built with <a href="https://nextjs.org/" className={styles.underline}>Next.js</a> and CSS Grid,
-                hosted on <a href="https://www.netlify.com/" className={styles.underline}>Netlify</a>.
-                The source code is available on <a href="https://github.com/iambran/personalwebsite" className={styles.underline}>Github</a>.
+                本站使用 <a href="https://nextjs.org/" className={styles.underline}>Next.js</a> 搭建，
+                感谢 <a href="https://www.netlify.com/" className={styles.underline}>Netlify</a> 提供的免费服务器，
+                和 <a href="https://github.com/iambran/personalwebsite" className={styles.underline}>Github</a> 自动代码部署服务。
             </footer>
         </div>
     )
