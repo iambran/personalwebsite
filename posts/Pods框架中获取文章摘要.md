@@ -3,6 +3,7 @@ title: 'Pods框架中获取文章摘要'
 date: '2021-10-02'
 ---
 
+
 当使用Oxygen Page Builder和Pods Framework建站时，如果主题不支持文章摘要(Post Excerpt)，可以在Oxygen文章列表模板中增加一个Code Block，然后增加以下PHP代码：
 
 我是在Wordpress官方论坛里面找到的这个PHP函数，原文链接[https://developer.wordpress.org/reference/functions/wp_trim_words/](https://developer.wordpress.org/reference/functions/wp_trim_words/)
