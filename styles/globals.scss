@@ -10,7 +10,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: $font-text;
-  line-height: 1.7;
+  line-height: 1.5;
   font-size: clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 0.5882)), 2rem);
   color: $color-text;
 }
@@ -51,8 +51,8 @@ pre {
 
 code {
   background-color: $color-bg-code;
-  border-radius: 5px;
-  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  padding: 0.3rem 0.7rem;
 }
 
 article {

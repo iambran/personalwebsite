@@ -1,0 +1,84 @@
+.grid {
+    display: grid;
+    // transform: rotate(45deg) translateX(30vw);
+    grid-template-columns: 20vh 1fr 0.5fr minmax(min-content, 1.5fr) 30vh;
+    grid-template-rows: 0.5fr 20vh min-content 1fr 1fr 20vh;
+
+    > div:first-child {
+        grid-column: 1;
+        grid-row: 2;
+        background-color: red;
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .typographie {
+        grid-column: 2 / span 3;
+        grid-row: 2;
+        align-self: end;
+        text-transform: uppercase;
+        font-size: calc(40px + 2vh);
+        line-height: 1;
+        margin-bottom: 0;
+    }
+
+    .jan {
+        grid-column: 1;
+        grid-row: 3;
+        writing-mode: vertical-rl;
+        justify-self: end;
+        font-size: 2em;
+        line-height: 1;
+            margin: 0;
+            transform: rotate(180deg);
+
+        p {
+            text-transform: uppercase;
+            font-size: calc(50px + 2vh);
+            line-height: 1;
+            margin: 0;
+        }
+    }
+
+    .die {
+        grid-column: 2;
+        grid-row: 3;
+        margin: 0;
+        line-height: 1;
+        font-size: calc(50px + 2vh);
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        text-transform: uppercase;
+    }
+
+    .forever {
+        grid-column: 3;
+        grid-row: 3;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: calc(15px + 2vh);
+        margin: 0;
+        line-height: 1;
+        color: white;
+    }
+
+    .graphic {
+        grid-column: 4;
+        grid-row: 3;
+        font-weight: 500;
+        font-size: calc(40px + 2vh);
+        margin: 0;
+        line-height: 1;
+        text-transform: uppercase;
+        z-index: 2;
+        color: white;
+    }
+
+    .rightbox {
+        grid-column: 3 / span 3;
+        grid-row: 3 / span 4;
+        background-color: red;
+    }
+}

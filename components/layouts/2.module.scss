@@ -1,11 +1,13 @@
 .grid {
     display: grid;
-    width: 100vw;
+    width: 80vh;
+    height: 80vh;
+    margin: auto;
     transform: rotate(-45deg);
     // grid-template-columns: auto 20ch 7.5vw 2.5vw 7.5vw 7.5vw 2.5vw 20ch auto;
     // grid-template-rows: auto 20ch 2.5vw 5vw 10vw 2.5vw 7.5vw auto;
-    grid-template-columns: auto repeat(16, calc(40px + 2vh)) auto;
-    grid-template-rows: auto repeat(16, calc(40px + 2vh)) auto;
+    grid-template-columns: 1fr repeat(16, 5vh) 1fr;
+    grid-template-rows: 1fr repeat(16, 5vh) 1fr;
 
     & > div:nth-child(even) {
         overflow: hidden;

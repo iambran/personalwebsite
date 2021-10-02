@@ -1,31 +1,22 @@
 ---
-title: 'HTML Root Font Size'
+title: 'html元素字体设置小技巧'
 date: '2021-08-25'
 ---
 
-# HTML Root font size
-After spending last few days reading [Sara Soueidan](https://www.sarasoueidan.com/)'s blog, I decide to open the developer tool and check out Sara's codes under the hood. I'm sure that I will learn a lot just by looking at them.
 
-She sets a `font-size: calc(15px + 0.25vw)` on `html` element and sets `body` font size as `1rem`, then I check the computed output, the font size on body is `18.6px` on 1440px width screen.
+最近读了[Sara Soueidan](https://www.sarasoueidan.com/)的博客, 我用开发者工具检查了她网站的css代码，发现她在html这里的字体设置使用的是 `font-size: calc(15px + 0.25vw)`，然后body使用的字体大小是 `1rem`。
 
-`rem` values are relative to the root `html` element.
+`rem` 这个单位是基于 `html` 元素字体大小来计算的，如 `html` 字体大小为16px，那么 `1rem` 等于16px，`2rem` 等于32px. `vw` 是viewport width，`100vw` 等于100%的屏幕宽度，那么这里 `0.25vw` 就是0.25%的屏幕宽度，这样 `html` 的字体大小就可以跟随屏幕的宽度自适应，比单独使用 `font-size: 16px` 这种方法更好一些。
 
 ```css
+
 html {
     font-size: calc(15px + 0.25vw);
-    /* 100vw = 1440px (screen width, mine is 1440px wide)
-       1vw = 1440px / 100
-       0.25vw = 1440px * 0.25 / 100
-    */
 }
 
 body {
     font-size: 1rem; 
-    /* 1rem equals to calc(15px + 0.25vw) */
 }
 
-h1 {
-    font-size: calc(1.5rem + 3vw);
-    line-height: 1.3;
-}
 ```
+

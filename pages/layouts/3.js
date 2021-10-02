@@ -51,6 +51,10 @@ export default function Layout() {
 
             </section>
 
+            <Link href="/layouts">
+                <a className={generalStyle.back}>Go back</a>
+            </Link>
+
         </>
     )
 }
