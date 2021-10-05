@@ -32,9 +32,7 @@ export default function Layout ({ children, home }) {
             <main>{children}</main>
 
             <footer className={styles.footer}>
-                本站使用 <a href="https://nextjs.org/" className={styles.underline}>Next.js</a> 搭建，
-                感谢 <a href="https://www.netlify.com/" className={styles.underline}>Netlify</a> 提供的免费服务器，
-                和 <a href="https://github.com/iambran/personalwebsite" className={styles.underline}>Github</a> 自动代码部署服务。
+            © Brandon Zhang. 特别感谢 <a href="https://nextjs.org/" className={styles.underline}>Next.js</a> / <a href="https://www.netlify.com/" className={styles.underline}>Netlify</a> / <a href="https://github.com/iambran/personalwebsite" className={styles.underline}>Github</a> 
             </footer>
         </div>
     )
