@@ -3,7 +3,7 @@ title: 'October CMS产品详情页相关产品区块'
 date: '2021-10-05'
 ---
 
-在October CMS中，我使用官方Builder Plugin插件构建的一个自定义的Product模型，假设我的产品详情页`product.htm`由两大区块组成，页面前半部分是该产品详情信息，底部是该产品的相关产品（related products），下面是`product.htm`页面的php代码：
+在[October CMS](https://octobercms.com/)中，我使用官方Builder Plugin插件构建的一个自定义的Product模型，假设我的产品详情页`product.htm`由两大区块组成，页面前半部分是该产品详情信息，底部是该产品的相关产品（related products），下面是`product.htm`页面的php代码：
 ```php
 
 <?php

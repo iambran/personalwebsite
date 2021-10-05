@@ -5,10 +5,10 @@ $maxContentWidth: 92vw;
   min-height: 100vh;
   padding: 0;
   margin: 0 auto;
-  display: grid;
+  // display: grid;
 
   // min-content allows me to set a fixed height to my footer
-  grid-template-rows: min-content auto min-content;
+  // grid-template-rows: min-content auto min-content;
 }
   
 .header {
