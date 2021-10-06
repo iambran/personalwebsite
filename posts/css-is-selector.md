@@ -18,22 +18,22 @@ date: '2021-10-05'
 在英语和俄语站点隐藏顶部菜单，通常会这样写CSS代码：
 ```CSS
 
-    html[lang="en-GB"] #top-bar-wrap {
-        display: none;
-    }
+html[lang="en-GB"] #top-bar-wrap {
+    display: none;
+}
 
-    html[lang="ru-RU"] #top-bar-wrap {
-        display: none;
-    }
+html[lang="ru-RU"] #top-bar-wrap {
+    display: none;
+}
 
 ```
 
 用上`:is`这个选择器后，CSS代码可以缩短为：
-```
+```CSS
 
-    :is(html[lang="en-GB"], html[lang="ru-RU"]) #top-bar-wrap {
-        display: none;
-    }
+:is(html[lang="en-GB"], html[lang="ru-RU"]) #top-bar-wrap {
+    display: none;
+}
 
 ```
 

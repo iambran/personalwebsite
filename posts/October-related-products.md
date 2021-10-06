@@ -4,10 +4,10 @@ date: '2021-10-05'
 ---
 
 在[October CMS](https://octobercms.com/)中，我使用官方Builder Plugin插件构建的一个自定义的Product模型，假设我的产品详情页`product.htm`由两大区块组成，页面前半部分是该产品详情信息，底部是该产品的相关产品（related products），下面是`product.htm`页面的php代码：
-```php
+```PHP
 
 <?php
-use Squarestudio\Products\Models\Product;
+    use Squarestudio\Products\Models\Product;
 
     function onStart() {
         // 获取与当前链接slug对应的产品信息
@@ -20,6 +20,7 @@ use Squarestudio\Products\Models\Product;
         $this['related_products'] = Product::where('slug', '!=', $this->param('slug'))
             ->where('category_id', '=', $this['category_id'])->take(3)->get();
     }
+?>
 
 ```
 
@@ -37,7 +38,9 @@ use Squarestudio\Products\Models\Product;
                 alt="{{ related_product.name }}"
             >
             <div>{{ related_product.model }}</div>
-            <a href="/products/{{ product.category.slug }}/{{ related_product.slug }}"></a>
+            <a 
+                href="/products/{{ product.category.slug }}/{{ related_product.slug }}">
+            </a>
         </div>
     {% endfor %}
     </div>

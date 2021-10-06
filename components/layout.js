@@ -4,7 +4,10 @@ import Image from 'next/image'
 import styles from './layout.module.scss'
 import Link from 'next/link'
 
+
 const prism = require('prismjs')
+require('prismjs/components/prism-markup-templating')
+require('prismjs/components/prism-php')
 
 const name = 'Brandon Zhang'
 export const siteTitle = 'Brandon Zhang - Front-End Web Developer'
