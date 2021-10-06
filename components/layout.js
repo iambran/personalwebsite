@@ -1,7 +1,10 @@
+import React, { useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from './layout.module.scss'
 import Link from 'next/link'
+
+const prism = require('prismjs')
 
 const name = 'Brandon Zhang'
 export const siteTitle = 'Brandon Zhang - Front-End Web Developer'
@@ -10,6 +13,10 @@ export const siteTitle = 'Brandon Zhang - Front-End Web Developer'
 
 
 export default function Layout ({ children, home }) {
+    useEffect(() => {
+        prism.highlightAll();
+    }, []);
+
     return (
         <div className={styles.grid}>
             <Head>
