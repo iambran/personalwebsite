@@ -58,22 +58,22 @@ use Squarestudio\Products\Models\Product;
 
 ```php
 
-    // 方法1
-    $this['has_related_products'] = $this['related_products']->count();
+// 方法1
+$this['has_related_products'] = $this['related_products']->count();
 
-    // 方法2
-    $this['has_related_products'] = !$this['related_products']->isEmpty();
+// 方法2
+$this['has_related_products'] = !$this['related_products']->isEmpty();
 
-    // 方法3
-    $this['has_related_products'] = $this['related_products']->isNotEmpty();
+// 方法3
+$this['has_related_products'] = $this['related_products']->isNotEmpty();
 
 ```
 
 然后在html代码中将`{% if related_products %}`改成`{% if has_related_products %}`：
 ```html
 
-    {% if has_related_products %}
-        <section>里面内容不变</section>
-    {% endif %}
+{% if has_related_products %}
+    <section>里面内容不变</section>
+{% endif %}
 
 ```
