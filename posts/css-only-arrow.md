@@ -61,7 +61,7 @@ date: '2021-10-07'
 .has-arrow-left {
     position: relative;
 
-    /* 增加16px左侧padding */
+    /* 增加20px左侧padding */
     padding-left: 20px;
 }
 
@@ -233,11 +233,11 @@ b) **向右箭头** （css类别是has-arrow-right）
 ```css
 
 .has-arrow-right {
-    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .has-arrow-right::before {
-    left: 0;
+    right: 0;
 }
 
 ```
