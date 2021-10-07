@@ -32,12 +32,12 @@ export default function Post({ postData }) {
 
         <article>
             <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-            <div className={utilStyles.lightText}>
+            <div className={`${utilStyles.lightText} ${utilStyles.postDate}`}>
                 <Date dateString={postData.date} />
             </div>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             <Link href="/">
-              <a className={utilStyles.backToBlog}>&#10229;<span>返回博客列表</span></a>
+              <a className={utilStyles.backToBlog}>返回博客列表</a>
             </Link>
         </article>
 
