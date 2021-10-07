@@ -94,18 +94,3 @@ $color-bg-code: #2d2d2d;
   padding-bottom: 1rem;
   margin-bottom: 4rem;
 }
-
-.has-arrow-left-1 {
-  position: relative;
-}
-
-.has-arrow-left-1::before {
-  position: absolute;
-  content: "";
-  top: 50%;
-  left: 0;
-  width: 12px;
-  height: 12px;
-  border-top: 2px solid;
-  border-left: 2px solid;
-}

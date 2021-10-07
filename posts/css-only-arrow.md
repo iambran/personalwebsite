@@ -16,7 +16,7 @@ date: '2021-10-07'
 ```css
 
 .has-arrow-left {
-    /* 需要链接元素增加position: relative，然后伪元素通过position来移动它的位置 */
+    /* 需要按钮元素增加position: relative，然后伪元素通过position来移动它的位置 */
     position: relative;
 }
 
