@@ -6,6 +6,10 @@ $color-bg-code: #2d2d2d;
   position: relative;
   height: 40vh;
 }
+.blogListWrap {
+  max-width: 70ch;
+  margin: auto;
+}
 .heading2Xl {
     font-size: 2.5rem;
     line-height: 1.2;
@@ -28,11 +32,6 @@ $color-bg-code: #2d2d2d;
     margin: 1rem 0;
   }
   
-  .headingMd {
-    font-size: 1.2rem;
-    line-height: 1.5;
-  }
-  
   .borderCircle {
     border-radius: 9999px;
   }
@@ -41,19 +40,22 @@ $color-bg-code: #2d2d2d;
     color: inherit;
   }
   
-  .padding1px {
-    padding-top: 1px;
-  }
   
   .list {
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-top: 2rem;
   }
   
   .listItem {
-    margin: 0 0 1.25rem;
+    margin: 0 0 2rem;
+    border-bottom: 1px solid $color-light-gray;
     font-size: clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 0.5882)), 2rem);
+
+    & a {
+      display: block;
+    }
   }
   
   .lightText {

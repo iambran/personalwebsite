@@ -1,5 +1,5 @@
 ---
-title: 'CSS Only Arrow 仅用CSS设计箭头'
+title: 'CSS Only Arrow仅用CSS设计箭头'
 date: '2021-10-07'
 ---
 

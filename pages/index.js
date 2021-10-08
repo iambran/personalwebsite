@@ -25,18 +25,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
 
-      <section className={utilStyles.headingMd, utilStyles.welcome}>
-        {/* <Image
-          priority
-          src="/images/brandon-zhang.jpg"
-          className={utilStyles.profile}
-          layout="fill"
-          alt="Brandon Zhang"
-        /> */}
-
-      </section>
-
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <section className={`${utilStyles.blogListWrap}`}>
         <h1 className={utilStyles.headingXl}>博客</h1>
         <ul className={utilStyles.list}>
           {allPostsData.map(({id, date, title}) => (
@@ -44,10 +33,9 @@ export default function Home({ allPostsData }) {
               <Link href={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
-              <br />
-              {/* <small className={utilStyles.lightText}>
+              <small className={utilStyles.lightText}>
                 <Date dateString={date} />
-              </small> */}
+              </small>
             </li>
           ))}
         </ul>

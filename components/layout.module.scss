@@ -1,4 +1,4 @@
-$maxContentWidth: 90vw;
+$maxContentWidth: 92vw;
 
 .grid {
   max-width: $maxContentWidth;
@@ -7,8 +7,13 @@ $maxContentWidth: 90vw;
   margin: 0 auto;
   // display: grid;
 
-  // min-content allows me to set a fixed height to my footer
+  // // min-content allows me to set a fixed height to my footer
   // grid-template-rows: min-content auto min-content;
+}
+@media (max-width: 1000px) {
+  .grid{
+    max-width: 94vw;
+  }
 }
   
 .header {
