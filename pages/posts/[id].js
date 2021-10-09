@@ -4,6 +4,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.scss'
 import Link from 'next/link'
+import { useEffect } from 'react'
 
 export async function getStaticProps({ params }) {
     const postData = await getPostData(params.id)
@@ -23,6 +24,16 @@ export async function getStaticPaths() {
 }
 
 export default function Post({ postData }) {
+
+  useEffect(() => {
+    var links = document.links;
+    for (var i = 0; i < links.length; i++ ) {
+      if (links[i].hostname != window.location.hostname) {
+        links[i].target = '_blank';
+      }
+    }
+  }, [])
+  
     return (
       <Layout>
 

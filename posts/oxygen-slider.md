@@ -12,7 +12,7 @@ date: '2021-09-27'
 ```javascript
 
 window.addEventListener('load', function () {
-    document.querySelector(".hide-slider").style.visibility= "visible";
+    document.querySelector(".hide-slider").style.visibility = "visible";
 });
 
 ```

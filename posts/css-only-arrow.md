@@ -261,4 +261,4 @@ b) **向右箭头** （css类别是has-arrow-right）
 }
 </style>
 
- 向下的箭头相应调整旋转的角度即可，即`rotate(225deg)`。
+向下的箭头相应调整旋转的角度即可，即`rotate(225deg)`。
