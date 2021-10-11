@@ -38,6 +38,19 @@ export default function Home({ allPostsData }) {
               </small>
             </li>
           ))}
+
+          {/* {allPostsData.filter(({isPublished}) => isPublished !== 'false')
+            .map(({id, date, title}) => (
+              <li className={utilStyles.listItem} key={id}>
+                <Link href={`/posts/${id}`}>
+                  <a>{title}</a>
+                </Link>
+                <small className={utilStyles.lightText}>
+                  <Date dateString={date} />
+                </small>
+              </li>
+          ))} */}
+
         </ul>
 
       </section>
