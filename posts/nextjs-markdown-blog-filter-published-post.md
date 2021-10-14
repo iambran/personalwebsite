@@ -18,6 +18,19 @@ isPublished: ''
 isPublished: 'false'
 ---
 ```
+markdown文件顶部的front-matter通过[gray-matter](https://github.com/jonschlinkert/gray-matter)解析后，`isPublished`是其中的一个数据，那么就可以在后面的`filter()`方法中引用这个参数`{isPublished}`
+
+```javascript
+{
+  content: '',
+  data: { 
+    // ... 其他数据 
+    isPublished: 'false' 
+  }
+}
+
+```
+
 
 lib > posts.js中的`getSortedPostsData()`这个函数是负责调用所有的博客数据，那么我需要在这个函数里面增加一个`filter()`方法使其过滤掉`isPublished`值为`false`的文章。
 
