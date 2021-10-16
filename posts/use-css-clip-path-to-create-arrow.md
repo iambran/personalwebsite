@@ -96,7 +96,7 @@ clip-path: polygon(0 0, 0% 100%, 100% 50%);
 ```css
 
 .container__link {
-    // ...之前其他代码，不在重复
+    // ...已有代码
     display: grid;
 }
 
@@ -142,13 +142,13 @@ clip-path: polygon(0 0, 0% 100%, 100% 50%);
 ```css
 
 .container__link {
-    // ...之前其他代码，不在重复
+    // ...已有代码
     position: relative;
 }
 
 .container__link,
 .container__link::after {
-    // ...之前其他代码，不在重复
+    // ...已有代码
     position: absolute;
     right: 1em;
     top: 50%;
@@ -192,6 +192,7 @@ clip-path: polygon(0 0, 0% 100%, 100% 50%);
 ```css
 
 .container__link {
+    // ...已有代码
     padding-left: 1em;
     padding-right: 7em;
 }

@@ -18,19 +18,16 @@ isPublished: ''
 isPublished: 'false'
 ---
 ```
-markdown文件顶部的front-matter通过[gray-matter](https://github.com/jonschlinkert/gray-matter)解析后，`isPublished`是其中的一个数据，那么就可以在后面的`filter()`方法中引用这个参数`{isPublished}`
+markdown文件顶部的front-matter通过[gray-matter](https://github.com/jonschlinkert/gray-matter)解析后，会生成一个JavaScript  Object对象，`isPublished`是其中的一个参数，我们可以在 Pages > Posts > [id].js里面添加`console.log(postData)`来看一下这个Object对象是什么样的。下面是谷歌开发者工具console项目下的这个`postData`的信息，我们可以看到有`isPublished`这个参数。因为我这边文章是要发布的，所以目前`isPublished`的值是空的。
 
-```javascript
-{
-  content: '',
-  data: { 
-    // ... 其他数据 
-    isPublished: 'false' 
-  }
-}
+<img src="https://res.cloudinary.com/brandonzhang/image/upload/v1634360498/brandonzhang.cn/console-log-postdata_rgtw7g.jpg" alt="console.log(postdata)截图" style="border: 1px solid #f1f1f1; border-radius: 5px;">
 
-```
 
+现在有了`{isPublished}`这个参数，那么就可以在后面的`filter()`方法中引用这个参数来过滤掉发布状态为`false`的文章。
+
+<div style="margin-top: 10vh;"></div>
+
+### 第一步：在文章列表中过滤
 
 lib > posts.js中的`getSortedPostsData()`这个函数是负责调用所有的博客数据，那么我需要在这个函数里面增加一个`filter()`方法使其过滤掉`isPublished`值为`false`的文章。
 
@@ -66,7 +63,13 @@ export function getSortedPostsData() {
 
 ```
 
-在`getSortedPostsData()`中添加这个`filter()`方法是在博客列表中隐藏该文章，但是如果直接访问这篇文章的链接，还是可以访问的，接下来就需要到`pages > posts > [id].js`里面的`post()`函数里面增加一个`if`条件：
+在`getSortedPostsData()`中添加这个`filter()`方法仅仅是在博客列表中隐藏该文章，但是如果用户直接访问这篇文章的链接，还是可以访问的。
+
+<div style="margin-top: 10vh;"></div>
+
+### 第二步：取消该文章的访问权限。
+
+到`pages > posts > [id].js`里面的`post()`函数里面增加一个`if`条件：
 
 ```javascript
 
