@@ -2,6 +2,7 @@ $color-bg-code: #fdf6e3;
 $color-text: #373737;
 $font-text: 'Rubik', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
 $font-heading: "";
+$border-raidus: 5px;
 
 html {
   font-size: 62.5%;
@@ -16,6 +17,17 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-text;
+}
+
+h2 {
+  font-size: 3.2rem;
+  margin-top: 8vh;
+  
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin-top: 8vh;
 }
 
 *, *::before, *::after {
@@ -68,6 +80,14 @@ code {
 
 article {
   margin: 0 auto;
+  
+  img {
+    border-radius: $border-raidus;
+  }
+
+  h2 + h3 {
+    margin-top: inherit;
+  }
 }
  
 blockquote {
