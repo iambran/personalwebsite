@@ -41,7 +41,7 @@ export default function Layout() {
                     <p>藏傳佛教的渲染力，民宅別具特色的門梁與傳統的絢麗人文，讓西藏往往被視為一個神秘、遙不可及的天堂國度，這些獨特的風土文化卻是西藏人質樸、高雅生活中的一部分，同時也是他們純粹卻豐盛的心靈寄託。</p>
                     <p>從低海拔的林芝走入西藏，以世界最深的大峽谷著稱於世，一派蒼翠欲滴的森林雲海風光盡在眼前。戈壁湖邊的尼瑪石堆、傳統藝術家的木雕石鍋、隨風飄逸的五色風馬旗，遠眺布達拉宮，洗滌了俗世的塵擾。</p>
 
-                    <small>文字摘自<a href="https://www.natgeomedia.com/travel/article/content-2421.html" target="_blank">国家地理网站</a></small>
+                    <small>文字摘自<a href="https://www.natgeomedia.com/travel/article/content-2421.html" rel="noreferrer" target="_blank">国家地理网站</a></small>
 
                     {/* <Link href="/layouts">
                         <a className={layoutStyles.back}>返回</a>
