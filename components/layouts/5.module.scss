@@ -1,0 +1,51 @@
+.flex {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 120px);
+    grid-template-rows: 30vh 30vh 30vh;
+    margin-inline-start: 50px;
+
+    > div {
+        position: relative;
+
+        > div {
+            clip-path: polygon(33.33% 0%, 100% 0%, 66.67% 100%, 0% 100%);
+        }
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+    > div:first-child {
+        grid-column: 3 / span 3;
+    }
+
+    > div:nth-child(2) {
+        grid-column: 2 / span 3;
+        grid-row: 2;
+    }
+
+    > div:last-child {
+        grid-column: 1 / span 3;
+        grid-row: 3;
+    }
+}
+
+.content {
+    padding-inline-end: 20vw;
+
+    h1 {
+        font-size: 6rem;
+        color: #555;
+    }
+}
+
+.back {
+    display: block;
+}
