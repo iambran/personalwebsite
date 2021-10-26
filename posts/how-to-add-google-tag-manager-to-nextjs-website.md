@@ -71,4 +71,6 @@ GTM-XXXXX需要替换成你的Google Tag Manager的Container ID。
 
 添加完百度统计, 最后再提交这个GTM Container就可以了.
 
+最后, 再回到百度统计后台: **代码管理** > **代码安装检查**, 点击"开始检查", 有"页面代码安装状态：代码安装正确"的提示表示百度统计已经成功添加了.
 
+<img src="https://res.cloudinary.com/brandonzhang/image/upload/v1634649256/brandonzhang.cn/%E7%99%BE%E5%BA%A6%E7%BB%9F%E8%AE%A1-%E4%BB%A3%E7%A0%81%E5%AE%89%E8%A3%85%E6%A3%80%E6%9F%A5_gcl6hf.jpg" alt="百度统计代码检查" style="border: 1px solid #ddd;">

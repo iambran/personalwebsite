@@ -127,18 +127,25 @@ export async function getAllRecipes() {
     const res = await fetch('http://pods.local/wp-json/wp/v2/recipe')
   
     // 将获取的数据转化成JSON对象
-    const recipes = await res.json()
+    const allRecipes = await res.json()
   
     // 如果错误没有数据，给一个404错误
-    if (!recipes) {
+    if (!allRecipes) {
         return {
             notFound: true,
         }
     }
   
+    // 不是最正常的return格式，不过用这样使用是没问题的
+    // 正确的return格式见下面2021.10.21的备注
     return {
         allRecipes
     }
+
+    // 2021.10.21备注：return这里其实是不需要增加大括号{}的
+    // 去掉大括号后，后面在使用map()方法的时候allRecipes.allRecipes.map()就可以改成allRecipes.map()
+    // 正确的return格式
+    // return allRecipes
 }
 
 ```
@@ -403,9 +410,17 @@ export async function getSingleRecipe(id) {
         }
     }
 
+    // 不是最正常的return格式，不过用这样使用是没问题的
+    // 正确的return格式见下面2021.10.21的备注
     return {
         recipe,
     }
+
+    // 2021.10.21备注：return这里其实是不需要增加大括号{}的
+    // 去掉大括号后，后面在提取菜谱图片的时候就不是recipeData.recipe.recipe_photo.guid
+    // 可以直接recipeData.recipe_photo.guid
+    // 正确的return格式
+    // return recipe
 }
 
 ```
