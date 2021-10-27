@@ -44,7 +44,7 @@ export default function Post({ postData }) {
         >
         </Meta>
         
-        <article>
+        <article className={utilStyles.article}>
             <h1 className={utilStyles.headingXl}>{postData.title}</h1>
             <div className={`${utilStyles.lightText} ${utilStyles.postDate}`}>
                 <Date dateString={postData.date} />

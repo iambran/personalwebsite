@@ -1,5 +1,10 @@
 $color-light-gray: #f1f1f1; 
 $color-bg-code: #2d2d2d;
+$color-img-border: #ddd;
+
+.article img {
+  border: 1px solid $color-img-border;
+}
 
 .welcome {
   position: relative;
