@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Head from 'next/head'
+import Meta from './meta'
 import Image from 'next/image'
 import styles from './layout.module.scss'
 import Link from 'next/link'
@@ -10,7 +10,6 @@ require('prismjs/components/prism-markup-templating')
 require('prismjs/components/prism-php')
 
 const name = 'Brandon Zhang'
-export const siteTitle = 'Brandon Zhang - Front-End Web Developer'
 
 
 
@@ -22,18 +21,12 @@ export default function Layout ({ children, home }) {
 
     return (
         <div className={styles.grid}>
-            <Head>
-                <link rel="icon" href="/favicon.ico" />
+            {/* <Meta>
                 <meta 
                     name="description"
                     content="Brandon Zhang - Front-End Web Developer"
-                />
-                <meta name="og:title" content={siteTitle} />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-                <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet" />
-                
-            </Head>
+                />       
+            </Meta> */}
 
             <header className={styles.header}>
                 

@@ -1,7 +1,6 @@
 ---
 title: '使用CSS clip-path快速创建箭头'
 date: '2021-10-15'
-keywords: 'CSS clip-path用法，CSS clip-path箭头，CSS clip-path生成网站'
 description: '这篇博客会将大家怎么通过CSS clip-path快速创建箭头，并使用到我们的网站上面。'
 isPublished: ''
 ---

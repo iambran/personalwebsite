@@ -1,6 +1,7 @@
 ---
 title: 'Oxygen Slider元素css代码加载问题'
 date: '2021-09-27'
+description: 'Oxygen Slider元素css代码加载问题'
 ---
 
 我最近开始学习使用Oxygen建站，在用slider元素设计首页轮播图时，加载网页或刷新网页会带来一个奇怪的效果，就是刚开始的轮播图不是全屏宽，会有一个左侧的margin，然后经过零点几秒后轮播图恢复正常100%宽度。

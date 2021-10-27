@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Meta from '../components/meta'
 import Layout, {siteTitle} from '../components/layout'
 import utilStyles from '../styles/utils.module.scss'
 import { getSortedPostsData } from '../lib/posts'
@@ -21,9 +21,7 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
+      <Meta></Meta>
 
       <section className={`${utilStyles.blogListWrap}`}>
         <h1 className={utilStyles.headingXl}>博客</h1>

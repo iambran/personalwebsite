@@ -40,7 +40,6 @@ export default function Post({ postData }) {
 
         <Meta 
           pageTitle={postData.title}
-          keywords={postData.keywords}
           description={postData.description}
         >
         </Meta>

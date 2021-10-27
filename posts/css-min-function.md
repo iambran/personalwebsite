@@ -1,7 +1,6 @@
 ---
 title: 'CSS min()数学函数的妙用'
 date: '2021-10-13'
-keywords: 'css min()函数，css min()数学函数，css min() function解释'
 description: 'CSS min()数学函数，选取较小的值作为该函数的最终值，可以使我们的css代码更简化，更灵活。'
 isPublished: ''
 ---

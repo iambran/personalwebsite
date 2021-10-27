@@ -1,7 +1,6 @@
 ---
 title: '如何使Wordpress搜索功能支持自定义内容类型(Custom Post Type)'
 date: '2021-10-19'
-keywords: 'wordpress搜索自定义内容类型，wordpress搜索custom post type'
 content: '在Wordpress网站里面增加PHP代码，从而可以搜索自定义内容类型(Custom Post Type)'
 isPublished: ''
 ---

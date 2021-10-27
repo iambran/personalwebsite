@@ -1,6 +1,7 @@
 ---
 title: 'html元素字体设置小技巧'
 date: '2021-08-25'
+description: 'responsive HTML元素字体设置方法'
 ---
 
 

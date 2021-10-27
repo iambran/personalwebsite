@@ -1,6 +1,7 @@
 ---
 title: 'Next.js/Markdown博客站外链接在新窗口中打开'
 date: '2021-10-09'
+description: 'next.js / markdown博客设置所有站外链接在新窗口中打开'
 ---
 
 Next.js官方教程[Create a Next.js App](https://nextjs.org/learn/basics/create-nextjs-app)搭建的markdown博客，链接都是默认在当前窗口中打开，这个对于站内链接是ok的，但是对于站外链接肯定是在新窗口中打开用户体验最好。

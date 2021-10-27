@@ -1,7 +1,6 @@
 ---
 title: 'JavaScript querySelectorAll返回的NodeList对象转为数组(Array)'
 date: '2021-10-11'
-keywords: 'querySelectorAll, javascript NodeList节点, javascript Array数组'
 description: 'JavaScript querySelectorAll返回的节点集合(NodeList)转为数组(Array)，然后通过foreach()方法对数组的每个元素执行一次给定的函数'
 isPublished: 'false'
 ---

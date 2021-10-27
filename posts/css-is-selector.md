@@ -1,7 +1,6 @@
 ---
 title: 'CSS :is 选择器'
 date: '2021-10-05'
-keywords: 'CSS :is选择器, CSS教程'
 description: 'CSS :is选择器的概念和使用例子'
 ---
 

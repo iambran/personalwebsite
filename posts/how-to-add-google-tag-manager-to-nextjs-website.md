@@ -1,7 +1,6 @@
 ---
 title: '如何在Next.js网站上添加Google Tag Manager'
 date: '2021-10-19'
-keywords: 'Next.js网站添加谷歌标签管理器，Next.js网站 Google Tag Manager'
 description: '如何在Next.js网站上添加Google Tag Manager'
 isPublished: ''
 ---

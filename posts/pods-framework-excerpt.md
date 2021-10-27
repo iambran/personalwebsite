@@ -1,6 +1,7 @@
 ---
 title: 'Pods框架中获取文章摘要'
 date: '2021-10-02'
+description: '如何在pods插件中通过php代码获取文章摘要'
 ---
 
 
