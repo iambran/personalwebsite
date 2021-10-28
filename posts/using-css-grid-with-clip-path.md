@@ -1,6 +1,6 @@
 ---
 title: '使用CSS Grid和clip-path来创建别具一格的排版'
-date: '2021-1027'
+date: '2021-10-27'
 description: '使用CSS Grid和clip-path来创建一个别具一格的排版，将图片固定到css grid中，然后通过clip-path改变图片的形状，是他们的排版看起来很别致。'
 ---
 
