@@ -88,6 +88,15 @@ article {
   h2 + h3 {
     margin-top: inherit;
   }
+  .mt-1 {
+    height: 5vh;
+  }
+  .mt-2 {
+    height: 10vh;
+  }
+  .mt-3 {
+    height: 15vh;
+  }
 }
  
 blockquote {
@@ -96,4 +105,8 @@ blockquote {
   margin: 2rem 0;
   padding: 1rem 1.6rem;
   font-size: 1.5rem;
+}
+
+video {
+  border-radius: $border-raidus;
 }
