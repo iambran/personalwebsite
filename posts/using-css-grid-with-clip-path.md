@@ -4,7 +4,7 @@ date: '2021-1027'
 description: '使用CSS Grid和clip-path来创建一个别具一格的排版，将图片固定到css grid中，然后通过clip-path改变图片的形状，是他们的排版看起来很别致。'
 ---
 
-今天继续介绍一下`clip-path`的妙用，将结合CSS Grid创建一个别具一格的网页排版。我在另外一篇博客[使用clip-path快速创建箭头](http://localhost:3000/posts/use-css-clip-path-to-create-arrow)，有简单介绍过`clip-path`这个属性。这里的倾斜效果和使用[skew()函数](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-function/skew())不一样，`skew()`函数会使图片扭曲，而使用`clip-path`不会扭曲图片，`clip-path`属性使用裁剪方式创建元素的可显示区域。区域内的部分显示，区域外的隐藏。
+今天继续介绍一下`clip-path`的妙用，将结合CSS Grid创建一个别具一格的网页排版。我在另外一篇博客[使用clip-path快速创建箭头](https://brandonzhang.cn/posts/use-css-clip-path-to-create-arrow)，有简单介绍过`clip-path`这个属性。这里的倾斜效果和使用[skew()函数](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-function/skew())不一样，`skew()`函数会使图片扭曲，而使用`clip-path`不会扭曲图片，`clip-path`属性使用裁剪方式创建元素的可显示区域。区域内的部分显示，区域外的隐藏。
 
 <img src="https://res.cloudinary.com/brandonzhang/image/upload/v1635326136/brandonzhang.cn/Layout-5_svmglq.jpg" alt="css grid和clip-path结合使用的截图展示">
 
