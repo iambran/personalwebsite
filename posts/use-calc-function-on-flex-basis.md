@@ -81,7 +81,7 @@ main > article {
 
 /* article宽度为200px */
 article {
-    min-width: 200px;
+    max-width: 200px;
     flex-basis: 210px;
 }
 
