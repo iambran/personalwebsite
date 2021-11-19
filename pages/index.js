@@ -48,9 +48,7 @@ export default function Home({ allPostsData }) {
                 </small>
               </li>
           ))} */}
-
         </ul>
-        <div class={utilStyles.progress}></div>
       </section>
     </Layout>
   )
