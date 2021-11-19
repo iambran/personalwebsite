@@ -32,6 +32,14 @@ export default function Post({ postData }) {
         links[i].target = '_blank';
       }
     }
+    window.addEventListener('scroll', () => {
+      let scrollTop = window.scrollY;
+      let windowHeight = window.innerHeight;
+      let documentHeight = document.body.offsetHeight;
+      let scrollPercentage = scrollTop / (documentHeight - windowHeight);
+      console.log(scrollPercentage);
+      document.querySelector('body').style.setProperty('--scroll', scrollPercentage);
+    });
   }, [])
   
   if (postData.isPublished !== "false") {
@@ -53,6 +61,7 @@ export default function Post({ postData }) {
             <Link href="/">
               <a className={utilStyles.backToBlog}>返回博客列表</a>
             </Link>
+            <div className={utilStyles.progress}></div>
         </article>
 
       </Layout>

@@ -50,7 +50,7 @@ export default function Home({ allPostsData }) {
           ))} */}
 
         </ul>
-
+        <div class={utilStyles.progress}></div>
       </section>
     </Layout>
   )
