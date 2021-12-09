@@ -29,7 +29,13 @@ export default function Layout ({ children, home }) {
             </Meta> */}
 
             <header className={styles.header}>
-                
+
+                <Link href="/">
+                    <a>博客</a>
+                </Link>
+                <Link href="/photography">
+                    <a>摄影</a>
+                </Link>
             </header>
 
             <main>{children}</main>
