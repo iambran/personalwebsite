@@ -15,7 +15,7 @@ export default function Photography() {
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061683/Photography/1_biuczo.jpg"
           alt="boy resting on a recked ship"
         />
-        <figcaption>一个小男孩躺在一个废弃的渔船上，给人一种很宁静的感觉。<small>雅加达</small></figcaption>
+        <figcaption>躺在废弃的渔船上的小男孩<small>雅加达</small></figcaption>
       </figure>
 
       <figure>
@@ -95,43 +95,85 @@ export default function Photography() {
       </figure>
         {/* End of 4 row */}
 
+      <figure>
         <img
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061695/Photography/9_paxxsx.jpg"
           alt=""
         />
+        <figcaption>小时候的味道<small>武汉</small></figcaption>
+      </figure>
 
+      <figure>
         <img  
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061723/Photography/11_ptcrqk.jpg"
           alt=""
         />
+        <figcaption>从县城到老家小镇的大巴车<small>屏南</small></figcaption>
+      </figure>
 
+      <figure>
         <img
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061731/Photography/12_bn2yhj.jpg"
           alt=""
         />
+        <figcaption>"咦，我有一个一模一样的相机！"<small>江西吉安</small></figcaption>
+      </figure>
 
+      <figure className={utilStyles.protrait}>
         <img
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061771/Photography/15_jnqapt.jpg"
           alt=""
-          className={utilStyles.protrait}
         />
+        <figcaption>街头卖唱艺人<small>福州</small></figcaption>
+      </figure>
 
+      <figure className={utilStyles.protrait}>
         <img
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061722/Photography/13_hyjz21.jpg"
           alt=""
-          className={utilStyles.protrait}
         />
+        <figcaption>非常懂事的小兄妹<small>福州</small></figcaption>
+      </figure>
 
+      <figure className={utilStyles.protrait}>
         <img
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061640/Photography/4_zxopip.jpg"
           alt=""
-          className={utilStyles.protrait}
         />
+        <figcaption>旧城墙上卖小吃的大爷<small>马尼拉</small></figcaption>
+      </figure>
 
+      <figure>
         <img
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061733/Photography/16_weogvd.jpg"
           alt=""
         />
+        <figcaption>音乐与自由<small>福州</small></figcaption>
+      </figure>
+
+      <figure>
+        <img 
+          src="https://res.cloudinary.com/brandonzhang/image/upload/v1639145692/Photography/18_uxif8c.jpg"
+          alt=""
+        />
+        <figcaption>沙滩上玩游戏的小孩<small>科伦坡</small></figcaption>
+      </figure>
+
+      <figure>
+        <img 
+          src="https://res.cloudinary.com/brandonzhang/image/upload/v1639145691/Photography/19_dzdnql.jpg"
+          alt=""
+        />
+        <figcaption>花亭街卖草药的大妈<small>屏南</small></figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="https://res.cloudinary.com/brandonzhang/image/upload/v1639145694/Photography/20_wrpwfm.jpg"
+          alt=""
+        />
+        <figcaption>餐厅服务员<small>福州</small></figcaption>
+      </figure>
 
 
       </section>
