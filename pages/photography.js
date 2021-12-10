@@ -9,65 +9,90 @@ export default function Photography() {
     <Layout>
       <Meta></Meta>
       <section className={utilStyles.photo_grid}>
+
+      <figure>
         <img 
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061683/Photography/1_biuczo.jpg"
           alt="boy resting on a recked ship"
         />
+        <figcaption>一个小男孩躺在一个废弃的渔船上，给人一种很宁静的感觉。<small>雅加达</small></figcaption>
+      </figure>
 
+      <figure>
         <img 
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061707/Photography/2_ip9sxj.jpg"
           alt=""
         />
+        <figcaption>码头工人<small>雅加达</small></figcaption>
+      </figure>
 
+      <figure>
         <img 
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061682/Photography/5_qbim1m.jpg"
           alt=""
         />
-
+        <figcaption>为人民服务<small>福州</small></figcaption>
+      </figure>
         {/* End of first row */}
 
+      <figure className={utilStyles.protrait}>
         <img
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061660/Photography/3_rxvx68.jpg"
           alt=""
-          className={utilStyles.protrait}
         />
+        <figcaption>出差期间周末遇到印尼国庆，小巷子里孩子们在玩各种我从来没见过的游戏，欢度国庆<small>雅加达</small></figcaption>
+      </figure>
 
+      <figure className={utilStyles.landscape}>
         <img
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061754/Photography/10_w5l0vg.jpg"
           alt=""
-          className={utilStyles.landscape}
         />
-
+        <figcaption>涂鸦公园里的小兄妹<small>曼谷</small></figcaption>
+      </figure>
         {/* End of second row */}
 
+      <figure>
         <img 
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061685/Photography/6_sow1vw.jpg"
           alt=""
         />
+        <figcaption>武功山<small>江西萍乡</small></figcaption>
+      </figure>
 
+      <figure>
         <img 
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061665/Photography/7_yibslj.jpg"
           alt=""
         />
+        <figcaption>曾经无数次幻想过这样的体验<small>武汉</small></figcaption>
+      </figure>
 
+      <figure>
         <img  
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061689/Photography/8_j2qvwm.jpg"
           alt=""
         />
+        <figcaption>童年<small>呼和浩特</small></figcaption>
+      </figure>
 
         {/* End of 3 row */}
 
+      <figure className={utilStyles.landscape}>
         <img
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061721/Photography/14_i5adw0.jpg"
           alt=""
-          className={utilStyles.landscape}
         />
+        <figcaption>涂鸦公园里用脚踢的排球<small>曼谷</small></figcaption>
+      </figure>
 
+      <figure className={utilStyles.protrait}>
         <img  
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061774/Photography/17_wtfykf.jpg"
           alt=""
-          className={utilStyles.protrait}
         />
+        <figcaption>退休在家学习各种乐器的大爷<small>江西吉安</small></figcaption>
+      </figure>
         {/* End of 4 row */}
 
         <img

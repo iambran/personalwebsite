@@ -122,6 +122,20 @@ $color-img-border: #ddd;
   grid-column-gap: 1rem;
   grid-row-gap: 12rem;
 
+  figure {
+    margin: 0;
+    figcaption {
+      font-size: 16px;
+      text-align: right;
+      padding-left: 30%;
+      padding-top: 10px;
+      small {
+        display: block;
+        color: #666;
+        font-size: 0.7em;
+      }
+    }
+  }
   .photo_wrap {
     position: relative;
   }

@@ -13,10 +13,11 @@ $maxContentWidth: 70ch;
   
 .header {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 1rem;
   position: relative;
-  margin-bottom: 4rem;
+  padding-block: 2rem;
 }
   
 .backToHome {
