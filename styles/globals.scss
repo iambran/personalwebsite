@@ -39,12 +39,8 @@ p {
 }
 
 a {
-  color: #0070f3;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
+  color: #373737;
+  text-decoration: underline;
 
 }
 
@@ -55,24 +51,26 @@ img {
 
 pre {
   background-color: $color-bg-code;
-  padding: 0 2rem 0 4rem !important;
   border-radius: 5px;
   // Add important to overwrite prism theme css
-  margin: 2.5rem 0 5rem 0 !important;
   overflow-x: auto;
+  padding: 0 min(5vw, 3.5rem) !important;
+  margin-inline: max(-5vw, -3.5rem) !important;
+  border-radius: 0 !important;
 
   & code {
     background-color: none;
     // Add important to overwrite prism theme css
-    font-size: clamp(1.5rem, calc(1.5rem + ((1vw - 0.3rem) * 0.5882)), 2rem) !important;
+    font-size: 1.6rem !important;
     line-height: 1.2 !important;
     padding: 0 !important;
   }
 }
 
-@media (max-width: 992px) {
+
+@media (min-width: 70ch) {
   pre {
-    padding: 0 2rem !important;
+    border-radius: 10px !important;
   }
 }
 

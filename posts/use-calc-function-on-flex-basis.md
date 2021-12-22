@@ -63,15 +63,15 @@ main > article {
 
    当`min-width`大于`flex-basis`时，CSS选取`win-width`的数值作为元素的宽度。
 
-   ```css
+```css
 
-    /* article宽度为100px */
-    article {
-        min-width: 100px;
-        flex-basis: 90px;
-    }
+/* article宽度为100px */
+article {
+    min-width: 100px;
+    flex-basis: 90px;
+}
 
-   ```
+```
 
 2.**比较`max-width`和`flex-basis`**
 

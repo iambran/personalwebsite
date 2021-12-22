@@ -1,9 +1,10 @@
-$color-light-gray: #f1f1f1; 
+$color-light-gray: #e2e2e2; 
 $color-bg-code: #2d2d2d;
 $color-img-border: #ddd;
 
 .article {
-  width: min(70ch, 90vw);
+  width: min(65ch, 90vw);
+  padding-top: 8rem;
 }
 .article img {
   border: 1px solid $color-img-border;
@@ -15,7 +16,7 @@ $color-img-border: #ddd;
 }
 .blogListWrap {
   max-width: 70ch;
-  margin: auto;
+  padding: 8rem 4rem;
 }
 .heading2Xl {
     font-size: 2.5rem;
@@ -56,18 +57,24 @@ $color-img-border: #ddd;
   }
   
   .listItem {
-    margin: 0 0 2rem;
+    padding-block: 4rem;
     border-bottom: 1px solid $color-light-gray;
-    font-size: clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 0.5882)), 2rem);
+    font-size: min(6vmin, 4rem);
 
-    & a {
+    a {
       display: block;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   }
   
   .lightText {
     color: #666;
     font-size: 1.2rem;
+    margin-top: 1rem;
+    display: block;
   }
 
   .profile {
@@ -121,7 +128,6 @@ $color-img-border: #ddd;
   padding: 2rem;
   grid-column-gap: 1rem;
   grid-row-gap: 12rem;
-  background: black;
   padding-block: 8rem;
 
   figure {
@@ -163,4 +169,7 @@ $color-img-border: #ddd;
   }
 }
 
+.my {
+  padding: 4rem;
+}
 

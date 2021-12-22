@@ -24,7 +24,6 @@ export default function Home({ allPostsData }) {
       <Meta></Meta>
 
       <section className={`${utilStyles.blogListWrap}`}>
-        <h1 className={utilStyles.headingXl}>博客</h1>
         <ul className={utilStyles.list}>
           {allPostsData.map(({id, date, title}) => (
             <li className={utilStyles.listItem} key={id}>

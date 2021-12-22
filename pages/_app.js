@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 import TagManager from 'react-gtm-module'
 import '../styles/globals.scss'
-// import 'prismjs/themes/prism-tomorrow.css'
-import 'prismjs/themes/prism-solarizedlight.css'
+import 'prismjs/themes/prism-tomorrow.css'
+// import 'prismjs/themes/prism-solarizedlight.css'
 
 
 function App({ Component, pageProps }) {

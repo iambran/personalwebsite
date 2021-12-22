@@ -32,14 +32,14 @@ export default function Post({ postData }) {
         links[i].target = '_blank';
       }
     }
-    window.addEventListener('scroll', () => {
-      let scrollTop = window.scrollY;
-      let windowHeight = window.innerHeight;
-      let documentHeight = document.body.offsetHeight;
-      let scrollPercentage = scrollTop / (documentHeight - windowHeight);
-      console.log(scrollPercentage);
-      document.querySelector('body').style.setProperty('--scroll', scrollPercentage);
-    });
+    // window.addEventListener('scroll', () => {
+    //   let scrollTop = window.scrollY;
+    //   let windowHeight = window.innerHeight;
+    //   let documentHeight = document.body.offsetHeight;
+    //   let scrollPercentage = scrollTop / (documentHeight - windowHeight);
+    //   console.log(scrollPercentage);
+    //   document.querySelector('body').style.setProperty('--scroll', scrollPercentage);
+    // });
   }, [])
   
   if (postData.isPublished !== "false") {
