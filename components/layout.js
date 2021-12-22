@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Meta from './meta'
 import Image from 'next/image'
-import styles from './layout.module.scss'
+// import styles from './layout.module.scss'
 import Link from 'next/link'
 
 
@@ -20,22 +20,19 @@ export default function Layout ({ children, home }) {
     }, []);
 
     function toggleMode(e) {
-        
-        if (e.target.classList.contains('darkTheme')) {
-            document.querySelector('div[class^="layout_grid"]').style.removeProperty('--dark-theme-bg', '#000');
-            e.target.firstElementChild.style.transform = 'translateX(0)';
-            e.target.classList.remove('darkTheme');
-            e.target.style.background = '#ddd';
+        if (document.body.classList.contains('darkTheme')) {
+            document.querySelector('.circle').style.transform = 'translateX(0)';
+            document.body.classList.remove('darkTheme');
+            // e.target.style.background = '#ddd';
         } else {
-            document.querySelector('div[class^="layout_grid"]').style.setProperty('--dark-theme-bg', '#000');
-            e.target.firstElementChild.style.transform = 'translateX(35px)';
-            e.target.classList.add('darkTheme');
-            e.target.style.background = '#2B4160';
+            document.querySelector('.circle').style.transform = 'translateX(35px)';
+            document.body.classList.add('darkTheme');
+            // e.target.style.background = '#2B4160';
         }
     }
 
     return (
-        <div className={styles.grid}>
+        <div className="grid">
             {/* <Meta>
                 <meta 
                     name="description"
@@ -43,7 +40,7 @@ export default function Layout ({ children, home }) {
                 />       
             </Meta> */}
 
-            <header className={styles.header}>
+            <header className="header">
 
                 <Link href="/">
                     <a>博客</a>
@@ -54,10 +51,10 @@ export default function Layout ({ children, home }) {
                 <Link href="/about">
                     <a>个人简介</a>
                 </Link>
-                <div className={styles.themeSwitch}>
+                <div className="themeSwitch">
                     <p>🌞</p>
-                    <div className={styles.toggler} onClick={toggleMode}>
-                        <div className={styles.circle}></div>
+                    <div className="toggler" onClick={toggleMode}>
+                        <div className="circle"></div>
                     </div>
                     <p>🌑</p>
                     
@@ -66,8 +63,8 @@ export default function Layout ({ children, home }) {
 
             <main>{children}</main>
 
-            <footer className={styles.footer}>
-            © Brandon Zhang. 特别感谢 <a href="https://nextjs.org/" className={styles.underline}>Next.js</a> / <a href="https://www.netlify.com/" className={styles.underline}>Netlify</a> / <a href="https://github.com/" className={styles.underline}>Github</a> 
+            <footer className="footer">
+            © Brandon Zhang. 特别感谢 <a href="https://nextjs.org/" className="underline">Next.js</a> / <a href="https://www.netlify.com/" className="underline">Netlify</a> / <a href="https://github.com/" className="underline">Github</a> 
             </footer>
         </div>
     )

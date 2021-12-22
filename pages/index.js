@@ -1,6 +1,6 @@
 import Meta from '../components/meta'
 import Layout, {siteTitle} from '../components/layout'
-import utilStyles from '../styles/utils.module.scss'
+// import utilStyles from '../styles/utils.module.scss'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
@@ -23,14 +23,14 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <Meta></Meta>
 
-      <section className={`${utilStyles.blogListWrap}`}>
-        <ul className={utilStyles.list}>
+      <section className="blog-list">
+        <ul className="blog-list__list">
           {allPostsData.map(({id, date, title}) => (
-            <li className={utilStyles.listItem} key={id}>
+            <li className="blog-list__item" key={id}>
               <Link href={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
-              <small className={utilStyles.lightText}>
+              <small className="blog-list__date">
                 <Date dateString={date} />
               </small>
             </li>
