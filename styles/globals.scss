@@ -25,6 +25,7 @@ body.darkTheme {
   --dark-theme-border-color: #1f2332;
   --dark-theme-code-bg: #1c222b;
   --dark-theme-blockquote-left: #6d6d6d;
+  --dark-theme-circle-translate: 35px;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-text;
@@ -198,6 +199,7 @@ $maxContentWidth: 70ch;
     height: 25px;
     width: 25px;
     border-radius: 100px;
+    transform: translateX(var(--dark-theme-circle-translate, 0));
     transition: all 0.3s ease-in-out;
     pointer-events: none;
   }

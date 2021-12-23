@@ -21,11 +21,9 @@ export default function Layout ({ children, home }) {
 
     function toggleMode(e) {
         if (document.body.classList.contains('darkTheme')) {
-            document.querySelector('.circle').style.transform = 'translateX(0)';
             document.body.classList.remove('darkTheme');
             // e.target.style.background = '#ddd';
         } else {
-            document.querySelector('.circle').style.transform = 'translateX(35px)';
             document.body.classList.add('darkTheme');
             // e.target.style.background = '#2B4160';
         }
