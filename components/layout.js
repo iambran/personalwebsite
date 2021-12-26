@@ -47,7 +47,7 @@ export default function Layout ({ children, home }) {
                     <a>摄影</a>
                 </Link>
                 <Link href="/about">
-                    <a>个人简介</a>
+                    <a>作者</a>
                 </Link>
                 <div className="themeSwitch">
                     <p>🌞</p>

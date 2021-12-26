@@ -8,7 +8,7 @@ export default function Photography() {
   return (
     <Layout>
       <Meta></Meta>
-      <section className={utilStyles.photo_grid}>
+      <section className="photo_grid">
 
       <figure>
         <img 
@@ -35,7 +35,7 @@ export default function Photography() {
       </figure>
         {/* End of first row */}
 
-      <figure className={utilStyles.protrait}>
+      <figure className="protrait">
         <img
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061660/Photography/3_rxvx68.jpg"
           alt=""
@@ -43,7 +43,7 @@ export default function Photography() {
         <figcaption>出差期间周末遇到印尼国庆，小巷子里孩子们在玩各种我从来没见过的游戏，欢度国庆<small>雅加达</small></figcaption>
       </figure>
 
-      <figure className={utilStyles.landscape}>
+      <figure className="landscape">
         <img
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061754/Photography/10_w5l0vg.jpg"
           alt=""
@@ -78,7 +78,7 @@ export default function Photography() {
 
         {/* End of 3 row */}
 
-      <figure className={utilStyles.landscape}>
+      <figure className="landscape">
         <img
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061721/Photography/14_i5adw0.jpg"
           alt=""
@@ -86,7 +86,7 @@ export default function Photography() {
         <figcaption>涂鸦公园里用脚踢的排球<small>曼谷</small></figcaption>
       </figure>
 
-      <figure className={utilStyles.protrait}>
+      <figure className="protrait">
         <img  
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061774/Photography/17_wtfykf.jpg"
           alt=""
@@ -119,7 +119,7 @@ export default function Photography() {
         <figcaption>"咦，我有一个一模一样的相机！"<small>江西吉安</small></figcaption>
       </figure>
 
-      <figure className={utilStyles.protrait}>
+      <figure className="protrait">
         <img
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061771/Photography/15_jnqapt.jpg"
           alt=""
@@ -127,7 +127,7 @@ export default function Photography() {
         <figcaption>街头卖唱艺人<small>福州</small></figcaption>
       </figure>
 
-      <figure className={utilStyles.protrait}>
+      <figure className="protrait">
         <img
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061722/Photography/13_hyjz21.jpg"
           alt=""
@@ -135,7 +135,7 @@ export default function Photography() {
         <figcaption>非常懂事的小兄妹<small>福州</small></figcaption>
       </figure>
 
-      <figure className={utilStyles.protrait}>
+      <figure className="protrait">
         <img
           src="https://res.cloudinary.com/brandonzhang/image/upload/v1639061640/Photography/4_zxopip.jpg"
           alt=""
