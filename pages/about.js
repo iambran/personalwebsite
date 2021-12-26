@@ -20,10 +20,10 @@ export default function About() {
         </p> */}
 
         <div className="links">
-          <a href="https://github.com/iambran" target="_blank">Github</a>
-          <a href="https://codepen.io/brandonzhang" target="_blank">CodePen</a>
-          <a href="https://space.bilibili.com/386350896/video" target="_blank">bilibili</a>
-          <a href="https://www.zhihu.com/people/iambran/zvideos" target="_blank">知乎</a>
+          <a href="https://github.com/iambran" target="_blank" rel="noreferrer">Github</a>
+          <a href="https://codepen.io/brandonzhang" target="_blank" rel="noreferrer">CodePen</a>
+          <a href="https://space.bilibili.com/386350896/video" target="_blank" rel="noreferrer">bilibili</a>
+          <a href="https://www.zhihu.com/people/iambran/zvideos" target="_blank" rel="noreferrer">知乎</a>
         </div>
 
       </section>
