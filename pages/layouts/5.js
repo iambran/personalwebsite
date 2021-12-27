@@ -2,6 +2,7 @@ import Link from 'next/link'
 import layoutStyles from '../../components/layouts/5.module.scss'
 import Meta from '../../components/meta'
 import Image from 'next/image'
+import generalStyle from '../../components/layouts/general.module.scss'
 
 export default function Layout() {
     const pageTitle = 'Layout #5'
@@ -51,6 +52,9 @@ export default function Layout() {
 
 
             </section>
+            <Link href="/layouts">
+                <a className={generalStyle.back}>Go back</a>
+            </Link>
         </>
     )
 }

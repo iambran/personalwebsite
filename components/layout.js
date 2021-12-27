@@ -39,16 +39,20 @@ export default function Layout ({ children, home }) {
             </Meta> */}
 
             <header className="header">
-
-                <Link href="/">
-                    <a>博客</a>
-                </Link>
-                <Link href="/photography">
-                    <a>摄影</a>
-                </Link>
-                <Link href="/about">
-                    <a>作者</a>
-                </Link>
+                <nav>
+                    <Link href="/">
+                        <a>博客</a>
+                    </Link>
+                    <Link href="/layouts">
+                        <a>网格布局</a>
+                    </Link>
+                    <Link href="/photography">
+                        <a>摄影</a>
+                    </Link>
+                    <Link href="/about">
+                        <a>作者</a>
+                    </Link>
+                </nav>
                 <div className="themeSwitch">
                     <p>🌞</p>
                     <div className="toggler" onClick={toggleMode}>

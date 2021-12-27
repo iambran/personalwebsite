@@ -158,6 +158,12 @@ $maxContentWidth: 70ch;
   border-bottom: 1px solid var(--dark-theme-border-color, #d2d3d7);
   transition: all 0.3s ease;
 
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
   a {
     color: #585b63;
     text-decoration: none;
@@ -180,6 +186,17 @@ $maxContentWidth: 70ch;
     }
   }
 
+}
+
+@media (max-width: 650px) {
+  .header nav {
+    flex-direction: column;
+    gap: 0;
+    align-items: start;
+    a {
+      font-size: 2rem;
+    }
+  }
 }
 
 .themeSwitch {
@@ -317,6 +334,7 @@ $maxContentWidth: 70ch;
   }
   .links {
     display: flex;
+    flex-wrap: wrap;
     gap: 1.2rem;
     
     a {
