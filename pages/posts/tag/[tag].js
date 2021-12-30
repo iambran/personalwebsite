@@ -1,29 +1,45 @@
-import Meta from '../components/meta'
-import Layout, {siteTitle} from '../components/layout'
+import Meta from '../../../components/meta'
+import Layout, {siteTitle} from '../../../components/layout'
 // import utilStyles from '../styles/utils.module.scss'
-import { getSortedPostsData } from '../lib/posts'
+import { getAllPostsByTag, getAllPostTags } from '../../../lib/posts'
 import Link from 'next/link'
-import Date from '../components/date'
+import Date from '../../../components/date'
 import Image from 'next/image'
 
 
 
 // Note that here is async not default
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
+export async function getStaticProps({ params }) {
+  const allPostsData = getAllPostsByTag(params.tag);
   return {
     props: {
-      allPostsData
+      allPostsData,
+      // return params so PostsByTags() can receive this
+      params
     }
   }
 }
 
-export default function Home({ allPostsData }) {
+export async function getStaticPaths() {
+  const paths = getAllPostTags()
+  return {
+    fallback: false,
+    paths: paths.map(tag => ({
+      params: {
+        tag: tag
+      }
+    }))
+  }
+
+}
+
+export default function PostsByTags({ allPostsData, params }) {
   return (
     <Layout home>
       <Meta></Meta>
 
       <section className="blog-list">
+      <h1 className="blog-list__help">Posts related to <span>{params.tag}</span></h1>
         <ul className="blog-list__list">
           {allPostsData.map(({id, date, title, tags}) => (
             <li className="blog-list__item" key={id}>

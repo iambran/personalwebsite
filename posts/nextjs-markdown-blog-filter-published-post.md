@@ -3,6 +3,7 @@ title: 'Next.js Markdown博客增加filter()方法，过滤掉发布状态isPubl
 date: '2021-10-11'
 description: 'Next.js Markdown博客增加filter()方法，过滤掉发布状态isPublished为false的文章，使其不在前端加载'
 isPublished: ''
+tags: ['next.js']
 ---
 
 在我这个Next.js / Markdown博客中，如果我想将一篇文章设为草稿，不在前端加载（目前暂时没有这个功能）。那么我需要在markdown文件顶部增加一个isPublished的属性，然后通过这个属性的true/false值来相应加载或隐藏这篇文章。

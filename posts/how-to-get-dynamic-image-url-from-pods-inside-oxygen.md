@@ -2,6 +2,7 @@
 title: '在Oxygen中通过Dynamic Data获取pods自定义字段中的图片URL'
 date: '2021-10-07'
 description: '在wordpress中，通过pods插件添加了一个图片自定义字段，怎么在oxygen中通过dynamic data获取该图片的url'
+tags: ['wordpress', 'oxygen', 'pods']
 ---
 
 Wordpress网站中，我使用pods插件添加了一个Custom Post Type叫“products”，然后添加了一个自定义字段叫“产品图片”（product_photo），如下图所示。

@@ -2,6 +2,7 @@
 title: 'Next.js/Markdown博客网站增加语法高亮 (syntax highlighting)'
 date: '2021-10-06'
 description: '如何在next.js / markdown博客网站中增加语法高亮(syntax highlighting)'
+tags: ['next.js']
 ---
 
 我这个博客网站是跟随着Next.js文档[Create a Next.js App](https://nextjs.org/learn/basics/create-nextjs-app)一步步搭建起来的，这个文档教程最后是将网站部署到Vercel，而我这个是部署到Netlify，因为我之前的另一个网站已经部署到Netlify，比较熟悉，所以也将这个博客网站放到Netlify。

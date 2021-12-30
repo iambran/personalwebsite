@@ -3,6 +3,7 @@ title: 'Next.js + Wordpress REST API 建站教程'
 date: '2021-10-17'
 description: 'Next.js + Wordpress REST API 建站教程，通过pods插件添加自定义内容类型并且将数据通过rest api导出'
 isPublished: ''
+tags: ['wordpress', 'next.js']
 ---
 
 ## Wordpress后端准备

@@ -3,6 +3,7 @@ title: '如何使Wordpress搜索功能支持自定义内容类型(Custom Post Ty
 date: '2021-10-19'
 content: '在Wordpress网站里面增加PHP代码，从而可以搜索自定义内容类型(Custom Post Type)'
 isPublished: ''
+tags: ['wordpress', 'pods']
 ---
 
 Wordpress默认的搜索功能只能搜索页面和文章，这些数据是储存在数据库wp_posts表格里面。而自定义内容类型(Custom Post Type)的数据是储存在wp_postmeta这个表格里面，是不会被搜到的。如果需要自定义内容类型被搜索到，需要增加一段自定义的PHP代码到functions.php里面。但是通常很多网站都是使用别人开发的theme，那么我们可以安装[Code Snippets](https://wordpress.org/plugins/code-snippets/)这个插件来添加PHP代码。

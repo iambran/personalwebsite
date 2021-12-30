@@ -28,6 +28,7 @@ body.darkTheme {
   --dark-theme-circle-translate: 35px;
   --dark-theme-photography-caption: #d0d0d0;
   --dark-theme-social-links: #565656;
+  --dark-theme-help-color: #3a3a3a;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-text;
@@ -245,6 +246,22 @@ $maxContentWidth: 70ch;
   max-width: 70ch;
   padding: 8rem 4rem;
 
+  &__help {
+    font-weight: lighter;
+    background-color: var(--dark-theme-header-bg, #cc99cd);
+    display: inline;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-block: 1rem;
+    margin-left: -4rem;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    transition: all 0.3s ease;
+    span {
+      text-decoration: underline;
+    }
+  }
+
   &__list {
     list-style: none;
     padding: 0;
@@ -256,6 +273,7 @@ $maxContentWidth: 70ch;
     padding-block: 4rem;
     border-bottom: 1px solid var(--dark-theme-border-color, #e2e2e2);
     font-size: min(6vmin, 4rem);
+    transition: all 0.3s ease;
   }
   &__date {
     color: #666;
@@ -342,4 +360,41 @@ $maxContentWidth: 70ch;
     }
 
   }
+}
+
+.postDetails {
+  border-bottom: 1px solid var(--dark-theme-tag-bg, #e2e2e2);
+  padding-bottom: 1rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+  }
+  li {
+    list-style: none;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    background-color: var(--dark-theme-header-bg, #e2e2e2);
+    border-radius: 2px;
+    padding: 4px 10px;
+    line-height: 1;
+    transition: all 0.3s ease;
+  }
+}
+
+.postDetails.isPostList {
+  margin: 0;
+  border: none;
+  padding-top: 1rem;
+  justify-content: start;
+  gap: 1rem;
 }

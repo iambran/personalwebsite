@@ -2,6 +2,7 @@
 title: 'CSS :is 选择器'
 date: '2021-10-05'
 description: 'CSS :is选择器的概念和使用例子'
+tags: ['css']
 ---
 
 我一个客户的Wordpress网站有3种语言：中文，英语，俄语，他们需要在中文站点中显示顶部菜单(topbar)，而在英语和俄语站点不显示顶部菜单，此时CSS `:is`选择器就会相当好用。

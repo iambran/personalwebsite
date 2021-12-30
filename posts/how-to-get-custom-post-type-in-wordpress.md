@@ -2,6 +2,7 @@
 title: '如何在Wordpress中通过PHP代码获取自定义内容类型'
 date: '2021-11-07'
 description: '通过PHP代码get_post()获取自定义内容类型'
+tags: ['wordpress', 'pods']
 ---
 
 ## 背景介绍

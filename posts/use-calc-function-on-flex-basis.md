@@ -2,6 +2,7 @@
 title: 'CSS高级概念 - 使用好calc()函数可以让flexbox省去媒体查询(media query)'
 date: '2021-10-28'
 description: '在响应式排版中，在flexbox的flex-basis中使用calc()函数可以替代媒体查询，使代码更简洁，更高效，更流畅。'
+tags: ['css']
 ---
 
 在响应式网页设计中，虽然所有浏览器基本上都已经支持css grid了，但是使用flexbox的时候还是非常多的。

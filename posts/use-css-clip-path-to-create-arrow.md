@@ -3,6 +3,7 @@ title: '使用CSS clip-path快速创建箭头'
 date: '2021-10-15'
 description: '这篇博客会将大家怎么通过CSS clip-path快速创建箭头，并使用到我们的网站上面。'
 isPublished: ''
+tags: ['css']
 ---
 
 我之前写过另外一篇文章[通过CSS边框创建箭头](https://brandonzhang.cn/posts/css-only-arrow)，今天在看[Stephanie Eckles](https://moderncss.dev/custom-select-styles-with-pure-css/)博客的时候，学习到还可以使用`clip-path`创建箭头，所以准备写点文字和代码在里面总结一下。

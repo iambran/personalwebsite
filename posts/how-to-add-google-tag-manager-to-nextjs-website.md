@@ -3,6 +3,7 @@ title: '如何在Next.js网站上添加Google Tag Manager'
 date: '2021-10-19'
 description: '如何在Next.js网站上添加Google Tag Manager'
 isPublished: ''
+tags: ['next.js']
 ---
 
 我想给我这个Next.js博客网站添加Google Tag Manager，然后通过Google Tag Manager添加谷歌分析(Google Analytics)和百度分析(Baidu Analytics)。

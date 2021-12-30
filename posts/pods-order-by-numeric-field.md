@@ -2,6 +2,7 @@
 title: 'Pods框架中通过Numeric Field排序'
 date: '2021-10-09'
 description: 'Pods框架中通过Numeric Field排序'
+tags: ['pods']
 ---
 
 我是用[Pods插件](https://cn.wordpress.org/plugins/pods/)增加了一个自定义内容类型，单数标签：Product，复述标签：Products。然后添加一个字段，`标签：价格`，`名称：price`【pods简码或者php代码中会使用这个名称，另一个命名参数：product_price】，字段类型选择`Plain Number`。

@@ -54,8 +54,17 @@ export default function Post({ postData }) {
         
         <article className={utilStyles.article}>
             <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-            <div className={`${utilStyles.lightText} ${utilStyles.postDate}`}>
-                <Date dateString={postData.date} />
+            <div className="postDetails">
+              <ul className="tags">
+              {postData.tags.map((tag) => (
+                <li key={tag} className="tag">
+                  <Link href={`/posts/tag/${tag}`}>
+                    <a>{tag}</a>
+                  </Link>
+                </li>
+              ))}
+              </ul>
+              <Date dateString={postData.date} />
             </div>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             <Link href="/">

@@ -2,6 +2,7 @@
 title: 'CSS margin-inline的使用'
 date: '2021-10-10'
 description: 'CSS margin-inline的解释和应用'
+tags: ['css']
 ---
 
 我刚开始在学习CSS的时候，最容易入手的就是看youtube上面比较热门的CSS视频，但是随着对CSS了解的越来越深入，发现大多数视频所介绍的CSS都是这些博主比较常用的代码，没有介绍那些比较少见但却很好用的属性，当然这也是在情理之中的，肯定是有其他博主上传非常详细非常全面的CSS视频，只是我没有看到过。

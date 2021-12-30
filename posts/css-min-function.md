@@ -3,6 +3,7 @@ title: 'CSS min()数学函数的妙用'
 date: '2021-10-13'
 description: 'CSS min()数学函数，选取较小的值作为该函数的最终值，可以使我们的css代码更简化，更灵活。'
 isPublished: ''
+tags: ['css']
 ---
 
 在接触CSS `min()`数学函数之前，如果我们需要将下面的container的宽度设置为`70ch`，最大允许宽度不超过`100%`，通常的css写法是：
