@@ -215,6 +215,55 @@ export default function Photography() {
         <figcaption>餐厅服务员<small>福州</small></figcaption>
       </figure>
 
+      <figure>
+        <Image
+          src="https://res.cloudinary.com/brandonzhang/image/upload/v1641484579/Photography/0106_1_l1iqxx.jpg"
+          alt=""
+          width={615}
+          height={615}
+        />
+        <figcaption>过长的校服，是他哥哥/姐姐的校服吗？<small>长沙</small></figcaption>
+      </figure>
+
+      <figure>
+        <Image
+          src="https://res.cloudinary.com/brandonzhang/image/upload/v1641484578/Photography/0106_4_y6jrqz.jpg"
+          alt=""
+          width={615}
+          height={615}
+        />
+        <figcaption>给学校学生送外卖的骑手<small>长沙</small></figcaption>
+      </figure>
+
+      <figure>
+        <Image
+          src="https://res.cloudinary.com/brandonzhang/image/upload/v1641484579/Photography/0106_3_qzlyfg.jpg"
+          alt=""
+          width={615}
+          height={615}
+        />
+        <figcaption>很多市民保留到古井取水的习惯<small>长沙</small></figcaption>
+      </figure>
+
+      <figure>
+        <Image
+          src="https://res.cloudinary.com/brandonzhang/image/upload/v1641484579/Photography/0106_2_e4vuov.jpg"
+          alt=""
+          width={615}
+          height={615}
+        />
+        <figcaption>93岁还在坚持拉小提琴。我们是否曾经放弃过很多爱好？<small>长沙</small></figcaption>
+      </figure>
+
+      <figure>
+        <Image
+          src="https://res.cloudinary.com/brandonzhang/image/upload/v1641484579/Photography/0106_5_m3f3m8.jpg"
+          alt=""
+          width={615}
+          height={615}
+        />
+        <figcaption>手机直播中的大爷<small>桂林</small></figcaption>
+      </figure>
 
       </section>
 
