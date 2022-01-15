@@ -24,7 +24,7 @@ $color-img-border: #ddd;
   }
   
   .headingXl {
-    font-size: clamp(3.2rem, calc(3.2rem + ((1vw - 0.32rem) * 1.1765)), 4rem);
+    font-size: calc(4rem + 0.5vmin);
     line-height: 1.3;
     font-weight: 800;
     letter-spacing: -0.05rem;

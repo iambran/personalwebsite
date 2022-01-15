@@ -36,8 +36,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.7647)), 3.2rem);
-  margin-top: 8vh;
+  font-size: calc(2rem + 0.5vmin);
+  margin-top: 8vmin;
   
 }
 
@@ -424,4 +424,16 @@ $maxContentWidth: 70ch;
   padding-top: 1rem;
   justify-content: start;
   gap: 1rem;
+}
+
+.mt-5vmin {
+  margin-top: 5vmin;
+}
+
+.mt-10vmin {
+  margin-top: 10vmin;
+}
+
+.mt-15vmin {
+  margin-top: 15vmin;
 }
