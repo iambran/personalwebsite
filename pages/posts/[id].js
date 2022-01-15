@@ -5,6 +5,7 @@ import Meta from '../../components/meta'
 import utilStyles from '../../styles/utils.module.scss'
 import Link from 'next/link'
 import { useEffect } from 'react'
+import ViewCounter from '../../components/ViewCounter'
 
 export async function getStaticProps({ params }) {
     const postData = await getPostData(params.id)
@@ -43,6 +44,7 @@ export default function Post({ postData }) {
   }, [])
   
   if (postData.isPublished !== "false") {
+    // console.log(postData);
     return (
       <Layout>
 
@@ -65,6 +67,7 @@ export default function Post({ postData }) {
               ))}
               </ul>
               <Date dateString={postData.date} />
+              <ViewCounter slug={postData.id} />
             </div>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             <Link href="/">

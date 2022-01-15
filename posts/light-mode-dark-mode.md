@@ -134,6 +134,9 @@ window.addEventListener('DOMContentLoaded', function() {
       document.body.classList.add('dark-mode');
     }
 
+    // 或者使用toggle方法
+    // document.body.classList.toggle('dark-mode');
+
   });
 });
 
