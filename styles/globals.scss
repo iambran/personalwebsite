@@ -87,6 +87,7 @@ pre {
 @media (min-width: 70ch) {
   pre {
     border-radius: 10px !important;
+    margin-inline: 0 !important;
   }
 }
 
@@ -411,6 +412,9 @@ $maxContentWidth: 70ch;
     padding: 4px 10px;
     line-height: 1;
     transition: all 0.3s ease;
+  }
+  .leaf {
+    margin-inline: 0.3em;
   }
 }
 

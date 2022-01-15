@@ -57,6 +57,9 @@ export default function Post({ postData }) {
         <article className={utilStyles.article}>
             <h1 className={utilStyles.headingXl}>{postData.title}</h1>
             <div className="postDetails">
+              <div className="">
+                Brandon Zhang <span className="leaf">&#9752;</span> <Date dateString={postData.date} /> <span className="leaf">&#9752;</span> <ViewCounter slug={postData.id} />
+              </div>
               <ul className="tags">
               {postData.tags.map((tag) => (
                 <li key={tag} className="tag">
@@ -66,8 +69,6 @@ export default function Post({ postData }) {
                 </li>
               ))}
               </ul>
-              <Date dateString={postData.date} />
-              <ViewCounter slug={postData.id} />
             </div>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             <Link href="/">
