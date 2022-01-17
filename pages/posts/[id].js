@@ -6,6 +6,7 @@ import utilStyles from '../../styles/utils.module.scss'
 import Link from 'next/link'
 import { useEffect } from 'react'
 import ViewCounter from '../../components/ViewCounter'
+import ProfilePhoto from '../../components/ProfilePhoto'
 
 export async function getStaticProps({ params }) {
     const postData = await getPostData(params.id)
@@ -55,12 +56,7 @@ export default function Post({ postData }) {
         </Meta>
         
         <article className={utilStyles.article}>
-            <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-            <div className="postDetails">
-              <div className="">
-                Brandon Zhang <span className="leaf">&#9752;</span> <Date dateString={postData.date} /> <span className="leaf">&#9752;</span> <ViewCounter slug={postData.id} />
-              </div>
-              <ul className="tags">
+            <ul className="tags">
               {postData.tags.map((tag) => (
                 <li key={tag} className="tag">
                   <Link href={`/posts/tag/${tag}`}>
@@ -69,6 +65,13 @@ export default function Post({ postData }) {
                 </li>
               ))}
               </ul>
+            <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+            <div className="postDetails">
+                <ProfilePhoto />
+                <div>
+                  <div className="name">Brandon Zhang</div>
+                  <Date dateString={postData.date} /> — <ViewCounter slug={postData.id} />
+                </div>
             </div>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             <Link href="/">

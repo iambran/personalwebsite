@@ -41,12 +41,12 @@ Firebase首页三个Call To Action按钮：
   }
 
   .cta-button {
-    margin-right: 30px;
+    margin-right: 20px;
     color: #1a73e8;
     background-color: #fff;
     text-decoration: none;
     border-radius: 8px;
-    padding: 20px 52px;
+    padding: 20px 30px;
     font-size: 20px;
     line-height: 16px;
     font-weight: bold;
@@ -65,12 +65,22 @@ Firebase首页三个Call To Action按钮：
     border-radius: 8px;
   }
 
+  @media (max-width: 70ch) {
+    .cta-button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+    .cta-link {
+      font-size: 14px;
+    }
+  }
+
   .cta-link:nth-child(2) {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   .cta-link:nth-child(n+3) {
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .cta-link:hover {
