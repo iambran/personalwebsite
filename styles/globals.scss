@@ -7,6 +7,11 @@ $border-raidus: 5px;
   box-sizing: border-box;
 }
 
+:root {
+  --accent-color: #cc99cd;
+  --border-radius: 5px;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -37,13 +42,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  font-size: calc(2rem + 0.5vmin);
-  margin-top: 8vmin;
-  
+  font-size: calc(3rem + 0.5vmin);
+  margin-top: 12vmin;
 }
 
 h3 {
   font-size: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 0.8824)), 2.4rem);
+  font-size: calc(2rem + 0.5vmin);
   margin-top: 8vh;
 }
 
@@ -70,6 +75,7 @@ pre {
   margin-inline: max(-5vw, -3.5rem) !important;
   border-radius: 0 !important;
   transition: all 0.3s ease;
+  margin-bottom: min(10vmin, 6rem) !important;
 
   & code {
     background-color: none;
@@ -156,7 +162,6 @@ $maxContentWidth: 70ch;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
   position: relative;
   padding-block: 2rem;
   // background: var(--dark-theme-header-bg, #fff);
