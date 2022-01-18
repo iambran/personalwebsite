@@ -6,4 +6,5 @@ module.exports = {
     domains: ['images.unsplash.com', 'res.cloudinary.com'],
   },
   generateBuildId: () => 'build',
+  swcMinify: true,
 }
