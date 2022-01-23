@@ -62,11 +62,11 @@ tags: ['css']
   background-color: var(--flex-item-bg);
 }
 
-.flex-item:first-child {
+.flex-item:nth-child(odd) {
   --flex-item-bg: orange;
 }
 
-.flex-item:nth-child(2) {
+.flex-item:nth-child(even) {
   --flex-item-bg: DarkSeaGreen;
 }
 </style>
@@ -122,11 +122,59 @@ tags: ['css']
 </section>
 
 
+flex-wrap属性则是规定当flex容器宽度不能装下里面的所有flex元素时，出现overflow的那些flex元素会不会跳到新的一行的问题。那么默认情况下`flex-wrap: nowrap;`，当flex容器宽度不够装下所有flex元素时，溢出的flex元素都还会保持在同一行，不会跳到新的一行，也就是下面这种情况。
+
+<section class="flex-brandonzhang_cn">
+  <div class="flex-item">嗨，I'm flex item one.</div>
+  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">嗨，I'm flex item one.</div>
+  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">嗨，I'm flex item one.</div>
+  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">嗨，I'm flex item one.</div>
+  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">嗨，I'm flex item one.</div>
+  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">嗨，I'm flex item one.</div>
+  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">嗨，I'm flex item one.</div>
+  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">嗨，I'm flex item one.</div>
+  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+</section>
+
+
+<div class="mt-10vmin"></div>
+
+那么`flex-wrap: wrap`情况则是：
+<section class="flex-brandonzhang_cn" style="flex-wrap: wrap;">
+  <div class="flex-item">嗨，I'm flex item one.</div>
+  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">嗨，I'm flex item one.</div>
+  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">嗨，I'm flex item one.</div>
+  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">嗨，I'm flex item one.</div>
+  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">嗨，I'm flex item one.</div>
+  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">嗨，I'm flex item one.</div>
+  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">嗨，I'm flex item one.</div>
+  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">嗨，I'm flex item one.</div>
+  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+</section>
+
+
+OK，看到这里，刚接触flexbox的朋友（包括当初的我）会觉得很奇怪，为什么这两个属性带来的布局相差这么多。那么这个问题暂时先放一放，等下面我介绍完flex元素上面的属性后再回来解释这里会更容易理解一些。
+
+
 ## 2. flex元素（flex item）属性介绍
 
-当在flex容器上面声明display: flex;之后，所有flex容器的直系子元素（direction children）都会成为flex元素，那么在flex元素上面会有3个属性，分别是`flex-basis`, `flex-grow`, `flex-shrink`。那么我当初在学习flexbox时犯的一个错误是没有搞懂这三个属性的一个默认值，所以我这里必须需要着重介绍下。
+当在flex容器上面声明display: flex;之后，所有flex容器的直系子元素（direct children）都会成为flex元素，那么在flex元素上面会有3个属性，分别是`flex-basis`, `flex-grow`, `flex-shrink`。那么我当初在学习flexbox时犯的一个错误是没有搞懂这三个属性的一个默认值，所以我这里必须需要着重介绍下。
 
-目前因为我还没有在flex元素上面添加任何属性，除了之前定义的背景颜色。这种情况打开firefox开发者工具检查CSS是看不到他们的值的，那么我们可以写一些简单的JavaScript代码来帮我们找到答案。
+目前因为我还没有在flex元素上面添加任何属性，除了之前定义的背景颜色。这种情况打开firefox开发者工具检查CSS是看不到他们的值的，那么我们可以写一些简单的JavaScript代码来帮我们找到答案。当然，我们可以查看文档来了解这些属性的默认值，但是我自己觉得通过JavaScript打印到控制台显得更心安一些，也不知为何。
 
 ```javascript
 
@@ -153,3 +201,61 @@ console.log(`flex-shrink is ${flexShrink}`);
 <img src="https://res.cloudinary.com/brandonzhang/image/upload/v1642870381/brandonzhang.cn/Screenshot_2022-01-23_at_12.44.02_AM_pusqlv.png" alt="flexbox入门和精讲教程">
 
 那么我们从控制台的截图可以看到，`flex-basis`默认值为`auto`，`flex-grow`默认值为`0`，`flex-shrink`默认值为`1`。
+
+### a) flex-basis属性
+
+flex-basis属性代表flex元素最开始占据的宽度（在受到flex-grow和flex-shrink两个属性影响之前），那么默认值是auto，宽度则是刚刚好装下flex元素里面内容的一个宽度，不多不少，类似于我们在div上面定义一个`width: fit-content;`。
+
+### b) flex-grow属性
+
+flex-grow属性的意思是，当flex容器宽度分配给里面的所有flex元素之后，剩余的空间再按多少比例对应的分配给每个flex元素的概念。flex元素的flex-grow默认值是0，就是说当flex容器还有剩余空间的时候，flex元素不会自动增加他们的宽度以填充整个flex容器剩余的宽度，也就是我们刚开始声明display: flex之后的这个情况。
+
+<section class="flex-brandonzhang_cn">
+  <div class="flex-item">嗨，I'm flex item one.</div>
+  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+</section>
+
+如果我们想要让flex容器剩余的空间按照1:1的比例分配给这两个flex元素，那么可以增加：
+
+```css
+
+.flex-item {
+  flex-grow: 1;
+}
+
+/* 或者flex-grow: 200，只要他们两个的数值是一样的，都是按照1:1的比例分配 */
+.flex-item {
+  flex-grow: 200;
+}
+
+```
+
+<section class="flex-brandonzhang_cn">
+  <div class="flex-item" style="flex-grow: 1">嗨，I'm flex item one.</div>
+  <div class="flex-item" style="flex-grow: 1">嗨，I'm flex item two, with few more words.</div>
+</section>
+可以看到，他们得到的剩余空间的比例是相等的。
+
+
+<div class="mt-10vmin"></div>
+如果说想要第一个flex元素分配到的宽度是第二个flex元素的2倍，css可以改成：
+
+```css
+
+.flex-item:first-child {
+  flex-grow: 2;
+}
+
+.flex-item:nth-child(2) {
+  flex-grow: 1;
+}
+
+```
+
+<section class="flex-brandonzhang_cn">
+  <div class="flex-item" style="flex-grow: 2">嗨，I'm flex item one.</div>
+  <div class="flex-item" style="flex-grow: 1">嗨，I'm flex item two, with few more words.</div>
+</section>
+现在，第一个flex元素分配到的宽度是第二个的2倍。
+
+### c) flex-shrink属性

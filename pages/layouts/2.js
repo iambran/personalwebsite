@@ -3,8 +3,6 @@ import Link from 'next/link'
 import Meta from '../../components/meta'
 import generalStyle from '../../components/layouts/general.module.scss'
 import layoutStyle from '../../components/layouts/2.module.scss'
-import { styles } from 'ansi-colors'
-import { layout } from 'platform'
 
 export default function Layout() {
     const pageTitle = 'Layout #2'
