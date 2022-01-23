@@ -11,8 +11,8 @@ tags: ['css']
 ```HTML
 
 <section class="flex">
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
 </section>
 
 ```
@@ -40,16 +40,16 @@ tags: ['css']
 
 添加dislay: flex;前
 <section class="no-flex">
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
 </section>
 
 <div class="mt-10vmin"></div>
 
 添加dislay: flex;后
 <section class="flex-brandonzhang_cn">
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
 </section>
 
 <style>
@@ -99,48 +99,42 @@ tags: ['css']
 
 1. flex-direction: row（默认值）
 <section class="flex-brandonzhang_cn" style="margin-bottom: 10vmin;">
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
 </section>
 
 2. flex-direction: row-reverse
 <section class="flex-brandonzhang_cn" style="flex-direction: row-reverse; margin-bottom: 10vmin;">
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
 </section>
 
 3. flex-direction: column
 <section class="flex-brandonzhang_cn" style="flex-direction: column; margin-bottom: 10vmin;">
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
 </section>
 
 4. flex-direction: column-reverse
 <section class="flex-brandonzhang_cn" style="flex-direction: column-reverse; margin-bottom: 10vmin;">
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
 </section>
 
 
 flex-wrap属性则是规定当flex容器宽度不能装下里面的所有flex元素时，出现overflow的那些flex元素会不会跳到新的一行的问题。那么默认情况下`flex-wrap: nowrap;`，当flex容器宽度不够装下所有flex元素时，溢出的flex元素都还会保持在同一行，不会跳到新的一行，也就是下面这种情况。
 
 <section class="flex-brandonzhang_cn">
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
 </section>
 
 
@@ -148,22 +142,16 @@ flex-wrap属性则是规定当flex容器宽度不能装下里面的所有flex元
 
 那么`flex-wrap: wrap`情况则是：
 <section class="flex-brandonzhang_cn" style="flex-wrap: wrap;">
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
 </section>
 
 
@@ -211,8 +199,8 @@ flex-basis属性代表flex元素最开始占据的宽度（在受到flex-grow和
 flex-grow属性的意思是，当flex容器宽度分配给里面的所有flex元素之后，剩余的空间再按多少比例对应的分配给每个flex元素的概念。flex元素的flex-grow默认值是0，就是说当flex容器还有剩余空间的时候，flex元素不会自动增加他们的宽度以填充整个flex容器剩余的宽度，也就是我们刚开始声明display: flex之后的这个情况。
 
 <section class="flex-brandonzhang_cn">
-  <div class="flex-item">嗨，I'm flex item one.</div>
-  <div class="flex-item">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
 </section>
 
 如果我们想要让flex容器剩余的空间按照1:1的比例分配给这两个flex元素，那么可以增加：
@@ -231,8 +219,8 @@ flex-grow属性的意思是，当flex容器宽度分配给里面的所有flex元
 ```
 
 <section class="flex-brandonzhang_cn">
-  <div class="flex-item" style="flex-grow: 1">嗨，I'm flex item one.</div>
-  <div class="flex-item" style="flex-grow: 1">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item" style="flex-grow: 1">flex item one.</div>
+  <div class="flex-item" style="flex-grow: 1">flex item two...</div>
 </section>
 可以看到，他们得到的剩余空间的比例是相等的。
 
@@ -253,9 +241,66 @@ flex-grow属性的意思是，当flex容器宽度分配给里面的所有flex元
 ```
 
 <section class="flex-brandonzhang_cn">
-  <div class="flex-item" style="flex-grow: 2">嗨，I'm flex item one.</div>
-  <div class="flex-item" style="flex-grow: 1">嗨，I'm flex item two, with few more words.</div>
+  <div class="flex-item" style="flex-grow: 2">flex item one.</div>
+  <div class="flex-item" style="flex-grow: 1">flex item two...</div>
 </section>
 现在，第一个flex元素分配到的宽度是第二个的2倍。
 
 ### c) flex-shrink属性
+
+flex-shrink属性是当flex容器宽度缩小至装不下所有的flex元素时，前面已经说过，flex-shrink默认值是1，那么flex元素会按照比例（类似flex-grow）各自减小自己的宽度让flex容器不出现overflow，那么我们现在再回过去看下我们之前提到的那两个例子。
+
+再次提醒，三个属性默认值是：`flex-basis: auto`, `flex-grow: 0`, `flex-shrink: 1`。
+
+这是我们最开始只在flex容器上面声明display: flex的效果，flex元素的flex-basis等于auto，那么就会按照内容的最大宽度(max-content)，分别前后排列在同一行上面。可以想象flex容器为一个公司的办公室，那么这两个flex元素是办公室里面2个员工的办公区域，因为目前办公室够大，所以两个人的办公区域都按照他们各自的需求占据，根据他们办公设备和桌椅的大小划分（也就是flex元素里面的内容）。
+
+<section class="flex-brandonzhang_cn">
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+</section>
+
+<div class="mt-10vmin"></div>
+
+但是因为是初创公司，只能租一个小办公室，当员工增加时，如果办公室不能坐下所有的员工，那么flex-shrink: 1告诉所有这些员工，你们需要缩小各自的办公区域，以保证大家有一个比较舒适的办公区域，此时flex元素的宽度将会从max-content慢慢往下缩小，那么大家同样的按比例减小自己的办公区域，因为所有人的flex-shrink都等于1，也就是下面的这个情况，但是不能小于每个flex元素的最小值min-content。
+
+<section class="flex-brandonzhang_cn">
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+</section>
+
+<div class="mt-10vmin"></div>
+
+
+那么，当`flex-wrap: wrap`时又是另外一个情况了。此时这个公司可能有着雄厚的资金，有新晋员工时，当前办公室坐不下所有人的话，就在租新的一间办公室来容纳新员工，这样可以保证大家的办公区域足够宽阔，工作氛围好了，才能提高员工的团队凝聚力和产出。即然有新的办公室，那么大家就都不用缩小自己的办公室区域了，还是按照最初的flex-basis: auto来操作。
+
+<section class="flex-brandonzhang_cn" style="flex-wrap: wrap;">
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+</section>
+
+<div class="mt-10vmin"></div>
+
+那么这里面每个新的办公室，也就是新的一个flexbox容器，里面的flex元素仅仅会在他们所在的那行根据自身的flex-basis, flex-grow, flex-shrink进组布局。假设我们最后进公司的这位员工和老板有关系，想自己霸占一个办公室，那么可以给他增加一个`flex-grow: 1`。
+
+<section class="flex-brandonzhang_cn" style="flex-wrap: wrap;">
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item">flex item two...</div>
+  <div class="flex-item">flex item one.</div>
+  <div class="flex-item" style="flex-basis: 100%;">flex item two...</div>
+</section>
