@@ -83,8 +83,8 @@ tags: ['css']
 ```css
 
 .flex {
-  flex-direction: row; /* flex容器默认值 */
-  flex-wrap: nowrap; /* flex容器默认值 */
+  flex-direction: row; /* flexbox默认值 */
+  flex-wrap: nowrap; /* flexbox默认值 */
 
   /* 
   flex-direction和flex-wrap还可以简写为flex-flow 
@@ -222,6 +222,7 @@ flex-grow属性的意思是，当flex容器宽度分配给里面的所有flex元
   <div class="flex-item" style="flex-grow: 1">flex item one.</div>
   <div class="flex-item" style="flex-grow: 1">flex item two...</div>
 </section>
+
 可以看到，他们得到的剩余空间的比例是相等的。
 
 
@@ -244,6 +245,7 @@ flex-grow属性的意思是，当flex容器宽度分配给里面的所有flex元
   <div class="flex-item" style="flex-grow: 2">flex item one.</div>
   <div class="flex-item" style="flex-grow: 1">flex item two...</div>
 </section>
+
 现在，第一个flex元素分配到的宽度是第二个的2倍。
 
 ### c) flex-shrink属性
@@ -252,7 +254,7 @@ flex-shrink属性是当flex容器宽度缩小至装不下所有的flex元素时�
 
 再次提醒，三个属性默认值是：`flex-basis: auto`, `flex-grow: 0`, `flex-shrink: 1`。
 
-这是我们最开始只在flex容器上面声明display: flex的效果，flex元素的flex-basis等于auto，那么就会按照内容的最大宽度(max-content)，分别前后排列在同一行上面。可以想象flex容器为一个公司的办公室，那么这两个flex元素是办公室里面2个员工的办公区域，因为目前办公室够大，所以两个人的办公区域都按照他们各自的需求占据，根据他们办公设备和桌椅的大小划分（也就是flex元素里面的内容）。
+这是我们最开始只在flex容器上面声明display: flex的效果，flex元素的flex-basis等于auto，那么就会按照内容的最大宽度(max-content)，排列在同一行上面。可以想象flex容器为一个公司的办公室，那么这两个flex元素是办公室里面2个员工的办公区域，因为目前办公室够大，所以两个人的办公区域都按照他们各自的需求占据，根据他们办公设备和桌椅的大小划分（也就是flex元素里面的内容）。
 
 <section class="flex-brandonzhang_cn">
   <div class="flex-item">flex item one.</div>
@@ -277,7 +279,7 @@ flex-shrink属性是当flex容器宽度缩小至装不下所有的flex元素时�
 <div class="mt-10vmin"></div>
 
 
-那么，当`flex-wrap: wrap`时又是另外一个情况了。此时这个公司可能有着雄厚的资金，有新晋员工时，当前办公室坐不下所有人的话，就在租新的一间办公室来容纳新员工，这样可以保证大家的办公区域足够宽阔，工作氛围好了，才能提高员工的团队凝聚力和产出。即然有新的办公室，那么大家就都不用缩小自己的办公室区域了，还是按照最初的flex-basis: auto来操作。
+那么，当`flex-wrap: wrap`时又是另外一个情况了。此时这个公司可能有着雄厚的资金，有新晋员工时，当前办公室坐不下所有人的话，就再租新的一间办公室来容纳新员工，这样可以保证大家的办公区域足够宽阔，工作氛围好了，才能提高员工的团队凝聚力和产出。即然有新的办公室，那么大家就都不用缩小自己的办公室区域了，还是按照最初的flex-basis: auto来操作。
 
 <section class="flex-brandonzhang_cn" style="flex-wrap: wrap;">
   <div class="flex-item">flex item one.</div>
@@ -292,7 +294,7 @@ flex-shrink属性是当flex容器宽度缩小至装不下所有的flex元素时�
 
 <div class="mt-10vmin"></div>
 
-那么这里面每个新的办公室，也就是新的一个flexbox容器，里面的flex元素仅仅会在他们所在的那行根据自身的flex-basis, flex-grow, flex-shrink进组布局。假设我们最后进公司的这位员工和老板有关系，想自己霸占一个办公室，那么可以给他增加一个`flex-grow: 1`。
+那么这里面每个新的办公室，也就是新的一个flexbox容器，里面的flex元素仅仅会在他们所在的那行根据自身的flex-basis, flex-grow, flex-shrink进行布局。假设我们最后进公司的是一位总监，需要单独的一个办公室，那么可以给他增加一个`flex-basis: 100%`。
 
 <section class="flex-brandonzhang_cn" style="flex-wrap: wrap;">
   <div class="flex-item">flex item one.</div>
