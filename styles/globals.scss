@@ -80,9 +80,10 @@ pre {
   & code {
     background-color: none;
     // Add important to overwrite prism theme css
-    font-size: 1.6rem !important;
-    line-height: 1.2 !important;
+    // font-size: 1.6rem !important;
+    line-height: 0.8 !important;
     padding: 0 !important;
+    font-size: 0.9em !important;
   }
 }
 
@@ -103,7 +104,6 @@ code {
   border-radius: 3px;
   padding: 0.3rem 0.7rem;
   transition: all 0.3s ease;
-  font-family: $font-text;
 }
 
 article {
