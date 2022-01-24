@@ -244,3 +244,21 @@ customElements.define('customer-testimonial', CustomerTestimonial);
 <customer-testimonial></customer-testimonial>
 
 ```
+
+当我们把这个自定义标签添加到html文档后，打开开发者工具检查下可以发现这个Custom Elements已经被我们成功添加到页面中。
+
+<img src="https://res.cloudinary.com/brandonzhang/image/upload/v1643009916/brandonzhang.cn/Screenshot_2022-01-24_at_3.38.10_PM_q3qoxy.png" alt="web components 自定义标签 custom elements被添加到html页面中了">
+
+但是现在这个自定义标签，如果我们增加一个global样式来改变卡片的背景颜色，这个样式会透过自定义标签，影响到里面的卡片元素。
+
+```css
+
+.testimonial {
+  background-color: orange;
+} 
+
+```
+
+<img src="https://res.cloudinary.com/brandonzhang/image/upload/v1643009914/brandonzhang.cn/Web-Components%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B-1-without-shadowRoot_kglwvo.jpg" alt="全局css样式影响到了自定义标签里面的元素">
+
+那么，即然我们使用web components技术创建一个独立的custom elements，那么我们就是想它的样式只能由自定义标签内部的样式表来决定的，外面的css样式不能渗透进来，那么在下节会提到的shadow DOM可以帮助我们解决这个问题。
