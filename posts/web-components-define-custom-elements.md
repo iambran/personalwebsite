@@ -3,7 +3,7 @@ title: 'Web Components #1 - 注册自定义标签'
 date: '2022-01-18'
 description: 'Web Components #1 - 注册自定义标签，设计一个简答的客户评价卡片，并使用web components构建一个自定义标签(custom elements)'
 isPublished: ''
-tags: ['CSS', 'JavaScript', 'Web Components']
+tags: ['JavaScript', 'Web Components']
 ---
 
 我想尝试一个关于Web Components的系列博客，对我自己所掌握的Web Components知识做一个总结和提炼，如果有幸能帮助到其他朋友学习Web Components，那就更好了。
