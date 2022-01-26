@@ -1,10 +1,8 @@
 import Image from 'next/image'
-import Photo from '../public/images/brandon-zhang.JPG'
-
 export default function ProfilePhoto() {
   return (
       <Image 
-        src={Photo} 
+        src="https://res.cloudinary.com/brandonzhang/image/upload/v1643121170/brandonzhang.cn/brandon-zhang_7.32.56_PM_cgljob.jpg" 
         alt="Brandon Zhang - Front-End Web Developer 前端开发"
         width={40}
         height={40}

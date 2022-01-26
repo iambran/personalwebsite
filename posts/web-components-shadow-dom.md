@@ -64,6 +64,15 @@ customElements.define('customer-testimonial', CustomerTestimonial);
 
 <img src="https://res.cloudinary.com/brandonzhang/image/upload/v1643040049/brandonzhang.cn/Screenshot_2022-01-24_at_11.52.19_PM_nzrpiy.png" alt="template和style添加到shadow root里面 - codepen截图">
 
+或者也可以使用[`isConnected`](https://developer.mozilla.org/zh-CN/docs/Web/API/Node/isConnected)属性测试下`<style>`是否有被成功附加到shadow root里面。
+
+```javascript
+
+// 会返回true
+console.log(self.styles.isConnected);
+
+```
+
 和上一篇[Web Components #1 - 注册自定义标签](/posts/web-components-define-custom-elements)里面一样，我们可以添加一个全局的css代码，看看是否会渗透到我们这个shadow root里面。
 
 ```css
