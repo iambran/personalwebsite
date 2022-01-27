@@ -83,6 +83,18 @@ console.log(self.styles.isConnected);
 
 ```
 
-结果是，被我们封装在shadow root里面的卡片样式不会受到全局css代码的影响，yay!
+结果是，被我们封装在shadow root里面的卡片样式不会受到全局css代码的影响，yay! 当然，藏在shadow root里面的style更不会影响到shadow root以外的其他html元素。
 
 <img src="https://res.cloudinary.com/brandonzhang/image/upload/v1643040048/brandonzhang.cn/Web-Components-2_l1ur1k.jpg" alt="全部css不会渗透到shadow dom - codepen截图">
+
+除了style是自我独立的，DOM也是处于isolated的状态。
+
+```javascript
+
+// 返回null
+document.querySelector('.testimonial');
+
+// 返回.testimonial卡片
+document.querySelector('customer-testimonial').shadowRoot.querySelector('.testimonial');
+
+```

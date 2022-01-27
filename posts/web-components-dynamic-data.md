@@ -2,7 +2,7 @@
 title: 'Web Components #3 - 重复使用Custom Elements'
 date: '2022-01-24'
 description: 'Web Components #3 - 重复使用Custom Elements，这篇博客我需要自定义标签里面的html内容变成动态的，从自定义标签上面的属性获取数据，这样使用自定义标签的开发者可以根据不同的客户提供不同的客户评价内容。'
-isPublished: 'false'
+isPublished: ''
 tags: ['JavaScript', 'Web Components']
 ---
 
@@ -186,3 +186,162 @@ customElements.define('customer-testimonial', CustomerTestimonial);
 </customer-testimonial>
 
 ```
+
+
+`connectedCallback()`这个生命周期函数在`<customer-testimonial>`被插入到html文档中时会被触发，现在我们可以将`template`和`style`转移到这个函数中。
+
+```javascript
+
+class CustomerTestimonial extends HTMLElement {
+  constructor() {
+    // 必须首先调用super方法
+    super();
+    let self = this;
+
+    // 附加一个shadow root
+    self.attachShadow({ mode: 'open' });
+  }
+
+  connectedCallback() {
+    let self = this;
+    self.template = document.createElement('template');
+    self.template.innerHTML = `
+       <div class="testimonial">
+        <div class="testimonial__content">
+          "Brandon's CSS Grid tutorial is awesome. It covers so many details. Love that you use diagram from Figma to explain those details."
+        </div>
+        <div class="testimonial__footer">
+          <img alt="avatar" src="./avartar.jpg" class="testimonial__avatar" width="50" height="50">
+          <div>
+            <div class="testimonial__name">
+              Sienna Lee
+            </div>
+            <div class="testimonial__role">
+              Web Administrator
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+    
+    self.styles = document.createElement('style');
+    self.styles.innerHTML = `
+      .testimonial {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+        cursor: pointer;
+        padding: 4vmin 8vmin;
+        border-radius: 20px;
+        box-shadow: 0 2px 40px rgba(0 0 0 / 15%);
+      }
+
+      .testimonial__content {
+        font-size: 25px;
+        margin-bottom: 45px;
+      }
+
+      .testimonial__footer {
+        display: flex;
+        align-items: center;
+      }
+
+      .testimonial__avatar {
+        display: block;
+        max-width: 50px;
+        max-height: 50px;
+        margin-right: 15px;
+        border-radius: 999px;
+      }
+
+      .testimonial__name {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .testimonial__role {
+        font-size: 14px;
+      }    
+    `;
+
+    self.shadowRoot.appendChild(self.styles);
+    // console.log(self.styles.isConnected);
+    self.shadowRoot.appendChild(self.template.content);
+  }
+}
+
+// 注册一个自定义标签
+customElements.define('customer-testimonial', CustomerTestimonial);
+
+```
+
+那么在`connectedCallback()`函数里我们可以使用JavaScript获取自定义标签上面的data属性数据，然后在我们的template当中接收他们。
+
+```html
+
+<customer-testimonial
+  data-testimonial="Brandon's CSS Grid tutorial is awesome. It covers so many details. Love that you use diagram from Figma to explain those details."
+  data-avatar="./avatar.jpg"
+  data-name="Sienna Lee"
+  data-position="Web Administrator"
+>
+
+</customer-testimonial>
+
+```
+
+```javascript
+
+class CustomerTestimonial extends HTMLElement {
+  constructor() {
+    // 已有代码
+  }
+
+  connectedCallback() {
+    let self = this;
+
+    let testimonial = self.dataset.testimonial;
+    let avatar = self.dataset.avatar;
+    let name = self.dataset.name;
+    let position = self.dataset.position;
+
+    self.template = document.createElement('template');
+    self.template.innerHTML = `
+       <div class="testimonial">
+        <div class="testimonial__content">
+          ${testimonial}
+        </div>
+        <div class="testimonial__footer">
+          <img alt="avatar" src="${avatar}" class="testimonial__avatar" width="50" height="50">
+          <div>
+            <div class="testimonial__name">
+              ${name}
+            </div>
+            <div class="testimonial__role">
+              ${position}
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+    
+    // 已有styles代码
+
+    self.shadowRoot.appendChild(self.styles);
+    // console.log(self.styles.isConnected);
+    self.shadowRoot.appendChild(self.template.content);
+  }
+}
+
+// 注册一个自定义标签
+customElements.define('customer-testimonial', CustomerTestimonial);
+
+```
+
+如果不出错误，那么前端渲染出来的效果是和之前一样的，也可以用开发者工具检查一下。
+
+<img src="https://res.cloudinary.com/brandonzhang/image/upload/v1643268460/brandonzhang.cn/Screenshot_2022-01-27_at_3.27.17_PM_r0xw70.png" alt="web components重复使用custom elements">
+
+那么现在就可以重复使用这个自定义标签，在data属性上面提供不同的数据即可。
+
