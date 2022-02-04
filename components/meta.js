@@ -11,6 +11,7 @@ export default function Meta({ pageTitle, keywords, description }) {
             <link rel="icon" href="/favicon.ico" />
             <title>{pageTitle ? pageTitle : siteTitle}</title>
             <meta name="description" content={description} />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta property="og:locale" content="zh-CN"/>
             <meta property="og:type" content="article"/>
             <meta property="og:title" content={pageTitle || siteTitle} />
