@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { useEffect } from 'react'
 import ViewCounter from '../../components/ViewCounter'
 import ProfilePhoto from '../../components/ProfilePhoto'
+import GoogleAds from '../../components/GoogleAds'
 
 export async function getStaticProps({ params }) {
     const postData = await getPostData(params.id)
@@ -73,6 +74,9 @@ export default function Post({ postData }) {
                   <Date dateString={postData.date} /> — <ViewCounter slug={postData.id} />
                 </div>
             </div>
+            {/* Google Ads */}
+            <GoogleAds />
+
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             <Link href="/">
               <a className={utilStyles.backToBlog}>返回博客列表</a>
