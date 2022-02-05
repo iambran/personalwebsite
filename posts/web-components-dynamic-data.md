@@ -3,7 +3,7 @@ title: 'Web Components #3 - 重复使用Custom Elements'
 date: '2022-01-24'
 description: 'Web Components #3 - 重复使用Custom Elements，这篇博客我需要自定义标签里面的html内容变成动态的，从自定义标签上面的属性获取数据，这样使用自定义标签的开发者可以根据不同的客户提供不同的客户评价内容。'
 isPublished: ''
-tags: ['JavaScript', 'Web Components']
+tags: ['javascript', 'web components']
 ---
 
 现在我们需要将shadow DOM里面的html元素内容变成动态的数据，也就是将里面的数据从目前的静态数据转成从自定义标签上面获取动态数据。

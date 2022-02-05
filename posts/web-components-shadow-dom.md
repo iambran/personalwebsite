@@ -3,7 +3,7 @@ title: 'Web Components #2 - 使用shadow DOM'
 date: '2022-01-24'
 description: 'Web Components #2 - 使用shadow DOM。web components的一个重要属性是可以将自定义元素封装起来，与页面上的其他代码隔离开来，那么不同的开发者或团队可以仅考虑开发各自的组件，不用去考虑代码是否会影响到其他成员的组件，最后只需要提供一个公开的api接口供其他团队使用即可。'
 isPublished: ''
-tags: ['JavaScript', 'Web Components']
+tags: ['javascript', 'web components']
 ---
 
 继[Web Components #1 - 注册自定义标签](/posts/web-components-define-custom-elements)之后，这篇博客我将开始介绍shadow DOM。web components的一个重要属性是可以将自定义元素封装起来，与页面上的其他代码隔离开来，那么不同的开发者或团队可以仅考虑开发各自的组件，不用去考虑代码是否会影响到其他成员的组件，最后提供一个公开的api供其他团队使用，来构建一个完整的应用。要达到这个代码相互独立的目的，我们需要引入shadow DOM这个概念。
