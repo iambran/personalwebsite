@@ -123,14 +123,14 @@ tags: ['css']
 
 /* 将上面那条直线移到中间，并旋转-45deg */
 .hamburger-menu-wrap[open] .hamburger-menu__line:first-child {
-  top: calc(50% - 0.15rem);
+  top: calc(50% - 0.3rem);
   transform: rotate(-45deg);
   transform-origin: center;
 }
 
 /* 将下面面那条直线也移到中间，并旋转45deg */
 .hamburger-menu-wrap[open] .hamburger-menu__line:last-child {
-  top: calc(50% - 0.15rem);
+  top: calc(50% - 0.3rem);
   transform: rotate(45deg);
   transform-origin: center;
 }
@@ -189,13 +189,13 @@ tags: ['css']
 }
 
 .hamburger-menu-wrap--presentable[open] .hamburger-menu__line:first-child {
-  top: calc(50% - 0.15rem);
+  top: calc(50% - 0.3rem);
   transform: rotate(-45deg);
   transform-origin: center;
 }
 
 .hamburger-menu-wrap--presentable[open] .hamburger-menu__line:last-child {
-  top: calc(50% - 0.15rem);
+  top: calc(50% - 0.3rem);
   transform: rotate(45deg);
   transform-origin: center;
 }
