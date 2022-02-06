@@ -8,6 +8,7 @@ import Link from 'next/link'
 const prism = require('prismjs')
 require('prismjs/components/prism-markup-templating')
 require('prismjs/components/prism-php')
+require('prismjs/components/prism-bash')
 
 const name = 'Brandon Zhang'
 
