@@ -36,6 +36,10 @@ tags: ['css']
   position: relative;
 }
 
+.hamburger-menu::-webkit-details-marker {
+  display: none;
+}
+
 .hamburger-menu__line {
   display: block;
   width: 4rem;
@@ -79,6 +83,11 @@ tags: ['css']
   height: 2.8rem;
   position: relative;
   margin: auto;
+}
+
+/* 在safari浏览器中隐藏箭头需要增加这行代码 */
+.hamburger-menu::-webkit-details-marker {
+  display: none;
 }
 
 .hamburger-menu__line {
@@ -148,6 +157,10 @@ tags: ['css']
   height: 2.8rem;
   position: relative;
   margin: auto;
+}
+
+.hamburger-menu::-webkit-details-marker {
+  display: none;
 }
 
 .hamburger-menu__line {
