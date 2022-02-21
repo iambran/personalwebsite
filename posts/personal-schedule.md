@@ -2,7 +2,7 @@
 title: '2022 New Year Resolutions'
 date: '2022-02-04'
 description: '2022 New Year Resolutions'
-isPublished: ''
+isPublished: 'false'
 tags: ['life']
 ---
 
