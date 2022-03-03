@@ -55,12 +55,9 @@ export default function Layout ({ children, home }) {
                     </Link>
                 </nav>
                 <div className="themeSwitch">
-                    <p>🌞</p>
                     <div className="toggler" onClick={toggleMode}>
                         <div className="circle"></div>
-                    </div>
-                    <p>🌑</p>
-                    
+                    </div> 
                 </div>
             </header>
 
