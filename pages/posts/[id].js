@@ -74,10 +74,9 @@ export default function Post({ postData }) {
                   <Date dateString={postData.date} /> — <ViewCounter slug={postData.id} />
                 </div>
             </div>
-            {/* Google Ads */}
-            <GoogleAds />
 
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            <GoogleAds />
             <Link href="/">
               <a className={utilStyles.backToBlog}>返回博客列表</a>
             </Link>

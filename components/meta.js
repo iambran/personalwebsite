@@ -16,7 +16,6 @@ export default function Meta({ pageTitle, keywords, description }) {
             <meta property="og:type" content="article"/>
             <meta property="og:title" content={pageTitle || siteTitle} />
             <meta property="og:description" content={description} />
-            {/* <meta property="og:url" content={window.location}/> */}
             <meta property="og:site_name" content="brandonzhang.cn"/>
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />

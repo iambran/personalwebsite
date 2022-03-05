@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 const GoogleAds = () => {
   useEffect(() => {
     try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
+      (adsbygoogle = window.adsbygoogle || []).push({});
     } catch (error) {
       console.error(error);
     }
