@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "caniuse-lite": "^1.0.30001313",
     "date-fns": "^2.23.0",
     "firebase-admin": "^10.0.1",
     "gray-matter": "^4.0.3",
