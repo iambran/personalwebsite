@@ -34,7 +34,7 @@ MAILCHIMP_AUDIENCE_ID="f78c0975c2"
 
 ## 安装Mailchimp Marketing库
 
-我们还需要安装一个Mailchimp Marketing库：https://www.npmjs.com/package/@mailchimp/mailchimp_marketing
+我们还需要安装一个Mailchimp Marketing库。
 
 ```bash
 
