@@ -8,6 +8,7 @@ import { useEffect } from 'react'
 import ViewCounter from '../../components/ViewCounter'
 import ProfilePhoto from '../../components/ProfilePhoto'
 import GoogleAds from '../../components/GoogleAds'
+import Subscribe from '../../components/Subscribe.js'
 
 export async function getStaticProps({ params }) {
     const postData = await getPostData(params.id)
@@ -77,6 +78,7 @@ export default function Post({ postData }) {
 
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             <GoogleAds />
+            <Subscribe />
             <Link href="/">
               <a className={utilStyles.backToBlog}>返回博客列表</a>
             </Link>
