@@ -7,4 +7,15 @@ module.exports = {
   },
   generateBuildId: () => 'build',
   swcMinify: true,
+
+  // redirects => https://nextjs.org/docs/api-reference/next.config.js/redirects
+  async redirects() {
+    return [
+      {
+        source: '/cloudways', 
+        destination: 'https://www.cloudways.com/en/?id=783182',
+        permanent: true,
+      },
+    ]
+  },
 }
