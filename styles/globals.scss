@@ -37,10 +37,12 @@ body.darkTheme {
   --dark-theme-help-color: #3a3a3a;
   --dark-theme-underline: #cc99cd;
   --dark-theme-menu-bg: #1c222b;
+  --dark-theme-banner-bg-cloudways: #2E39BF;
 }
 
 body.darkTheme pre code {
-  filter: brightness(0.7);
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -156,6 +158,7 @@ $maxContentWidth: 70ch;
   padding: 0;
   margin: 0 auto;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   background-color: var(--dark-theme-bg, #fff);
   transition: background-color 0.3s ease;
@@ -219,6 +222,7 @@ $maxContentWidth: 70ch;
 
 @media (min-width: 1320px) {
   .grid {
+    grid-template-rows: 1fr -webkit-min-content;
     grid-template-rows: 1fr min-content;
   }
   .header {
@@ -239,7 +243,9 @@ $maxContentWidth: 70ch;
     a {
       background-color: var(--dark-theme-menu-bg, #f1f2f3);
       padding: 1em 0.2em;
-      writing-mode: vertical-lr;
+      -webkit-writing-mode: vertical-lr;
+          -ms-writing-mode: tb-lr;
+              writing-mode: vertical-lr;
       letter-spacing: 0.1em;
       font-size: 1.2em;
       &:hover {
@@ -409,7 +415,8 @@ $maxContentWidth: 70ch;
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -551,6 +558,8 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: var(--dark-theme-code-bg, initial);
+  transition: .3s;
   padding: 4rem;
   border-radius: 2rem;
   box-shadow: 0 2px 40px rgba(0 0 0 / 15%);
@@ -602,6 +611,87 @@ iframe {
     color: white;
     font-size: 1.6rem;
     cursor: pointer;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+body {
+  font-family: 'Lato';
+}
+
+.promo-banner {
+  background: var(--dark-theme-banner-bg-cloudways, #09142D);
+  display: block;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 3fr -webkit-max-content -webkit-min-content -webkit-max-content;
+  grid-template-columns: 3fr max-content min-content max-content;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: .3s;
+
+  &:hover {
+    box-shadow: 0 4px 4px rgba(0 0 0 / 25%);
+  }
+  
+  &::after {
+    position: absolute;
+    content: 'Promo Banner';
+    background: #1BEAB0;
+    right: -10px;
+    top: -4px;
+    padding: 5px 50px;
+    transform: rotate(25deg) translateX(35px);
+    font-size: .5em;
+    color: #142176;
+  }
+  .content {
+    justify-self: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .copy {
+    font-weight: 300;
+  }
+  
+  .cloudways svg {
+    width: 150px;
+  }
+  
+  .wordpress svg {
+    height: 40px;
+  }
+  
+  .cta .button {
+    box-sizing: border-box;
+    background: #1BEAB0;
+    color: #142176;
+    padding: 10px 30px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1;
+  }
+  small {
+    font-size: .75em;
+    display: block;
+    text-align: center;
+    margin-top: 4px;
+  }
+  .divider {
+    width: 1px;
+    height: 24px;
+    background: #606060;
+    margin-left: 4px;
+    margin-bottom: 4px;
   }
 }
 

@@ -9,6 +9,7 @@ import ViewCounter from '../../components/ViewCounter'
 import ProfilePhoto from '../../components/ProfilePhoto'
 import GoogleAds from '../../components/GoogleAds'
 import Subscribe from '../../components/Subscribe.js'
+import PromoBanner from '../../components/PromoBanner'
 
 export async function getStaticProps({ params }) {
     const postData = await getPostData(params.id)
@@ -76,6 +77,7 @@ export default function Post({ postData }) {
                 </div>
             </div>
 
+            <PromoBanner />
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             <GoogleAds />
             <Subscribe />
