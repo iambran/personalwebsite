@@ -678,7 +678,7 @@ body {
     line-height: 1;
   }
   small {
-    font-size: .75em;
+    font-size: .5em;
     display: block;
     text-align: center;
     margin-top: 4px;
@@ -689,6 +689,22 @@ body {
     background: #606060;
     margin-left: 4px;
     margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-banner {
+    grid-template-columns: -webkit-min-content 1px -webkit-min-content;
+    grid-template-columns: min-content 1px min-content;
+    padding-bottom: .5em;
+  }
+
+  .content {
+    grid-column: span 4;
+  }
+  
+  .cloudways svg {
+    height: auto;
   }
 }
 
