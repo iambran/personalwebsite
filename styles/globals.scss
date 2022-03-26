@@ -117,7 +117,7 @@ code {
 
 article {
   margin: 0 auto;
-  
+
   img {
     border-radius: $border-raidus;
   }
@@ -135,7 +135,7 @@ article {
     height: 15vh;
   }
 }
- 
+
 blockquote {
   background-color: var(--dark-theme-code-bg, #fdf6e3);
   border-left: 10px solid var(--dark-theme-blockquote-left, #CCC);
@@ -167,7 +167,7 @@ $maxContentWidth: 70ch;
   // grid-template-rows: min-content auto min-content;
 }
 
-  
+
 .header {
   display: flex;
   align-items: center;
@@ -257,7 +257,7 @@ $maxContentWidth: 70ch;
         transform-origin: top;
       }
     }
-    
+
   }
 }
 
@@ -266,8 +266,10 @@ $maxContentWidth: 70ch;
     flex-direction: column;
     gap: 0;
     align-items: start;
+    writing-mode: vertical-lr;
     a {
-      font-size: 2rem;
+      font-size: 3rem;
+      letter-spacing: 3px;
     }
   }
 }
@@ -298,7 +300,7 @@ $maxContentWidth: 70ch;
   }
 }
 
-  
+
 .backToHome {
   margin: 3rem 0 0;
 }
@@ -428,7 +430,7 @@ $maxContentWidth: 70ch;
       font-size: 14px;
     }
   }
-  
+
 }
 
 @media (min-width: 1200px) {
@@ -454,7 +456,7 @@ $maxContentWidth: 70ch;
     display: flex;
     flex-wrap: wrap;
     gap: 1.2rem;
-    
+
     a {
       color: var(--dark-theme-social-links, #626262);
     }
@@ -492,7 +494,7 @@ $maxContentWidth: 70ch;
     margin-left: 0.4rem;
   }
   a {
-    text-decoration: none; 
+    text-decoration: none;
     padding: 7px 24px 7px;
     letter-spacing: 0.8px;
     display: flex;
@@ -582,11 +584,11 @@ iframe {
     margin-top: 0;
   }
   p {
-    font-size: 1.6rem; 
-    margin-top: 0; 
+    font-size: 1.6rem;
+    margin-top: 0;
   }
 
-  
+
 
   input {
     margin-top: 1rem;
@@ -636,7 +638,7 @@ body {
   &:hover {
     box-shadow: 0 4px 4px rgba(0 0 0 / 25%);
   }
-  
+
   &::after {
     position: absolute;
     content: 'Promo Banner';
@@ -658,15 +660,15 @@ body {
   .copy {
     font-weight: 300;
   }
-  
+
   .cloudways svg {
     width: 150px;
   }
-  
+
   .wordpress svg {
     height: 40px;
   }
-  
+
   .cta .button {
     box-sizing: border-box;
     background: #1BEAB0;
@@ -702,7 +704,7 @@ body {
   .content {
     grid-column: span 4;
   }
-  
+
   .cloudways svg {
     height: auto;
   }

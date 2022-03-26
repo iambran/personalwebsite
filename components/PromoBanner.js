@@ -2,7 +2,7 @@ import React from 'react';
 
 const PromoBanner = () => {
   return (
-    <a className="promo-banner" href="https://www.cloudways.com/en/?id=783182">
+    <a className="promo-banner" href="https://www.cloudways.com/en/?id=783182" rel="noopener">
       <div className="content">
         <div className="copy">
           Load WordPress Sites in As Fast As <b>37ms!</b>
