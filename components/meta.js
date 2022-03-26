@@ -17,9 +17,6 @@ export default function Meta({ pageTitle, keywords, description }) {
             <meta property="og:title" content={pageTitle || siteTitle} />
             <meta property="og:description" content={description} />
             <meta property="og:site_name" content="brandonzhang.cn"/>
-            <link rel="preconnect" href="https://fonts.googleapis.com" />
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-            <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet" />
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9606176765911686"
      crossOrigin="anonymous"></script>
         </Head>
