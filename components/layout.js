@@ -9,6 +9,8 @@ const prism = require('prismjs')
 require('prismjs/components/prism-markup-templating')
 require('prismjs/components/prism-php')
 require('prismjs/components/prism-bash')
+// global css styles make the line numbers ugly, gonna fix that some other time
+// require('prismjs/plugins/line-numbers/prism-line-numbers.min.js')
 
 const name = 'Brandon Zhang'
 
@@ -31,12 +33,12 @@ export default function Layout ({ children, home }) {
     }
 
     return (
-        <div className="grid">
+        <div className="grid line-numbers">
             {/* <Meta>
-                <meta 
+                <meta
                     name="description"
                     content="Brandon Zhang - Front-End Web Developer"
-                />       
+                />
             </Meta> */}
 
             <header className="header">
@@ -47,9 +49,6 @@ export default function Layout ({ children, home }) {
                     <Link href="/layouts">
                         <a>网格布局</a>
                     </Link>
-                    <Link href="/photography">
-                        <a>摄影</a>
-                    </Link>
                     <Link href="/about">
                         <a>作者</a>
                     </Link>
@@ -57,14 +56,14 @@ export default function Layout ({ children, home }) {
                 <div className="themeSwitch">
                     <div className="toggler" onClick={toggleMode}>
                         <div className="circle"></div>
-                    </div> 
+                    </div>
                 </div>
             </header>
 
             <main>{children}</main>
 
             <footer className="footer">
-            © Brandon Zhang. 特别感谢 <a href="https://nextjs.org/" className="underline">Next.js</a> / <a href="https://www.netlify.com/" className="underline">Netlify</a> / <a href="https://github.com/" className="underline">Github</a> 
+            © Brandon Zhang. 特别感谢 <a href="https://nextjs.org/" className="underline">Next.js</a> / <a href="https://www.netlify.com/" className="underline">Netlify</a> / <a href="https://github.com/" className="underline">Github</a>
             </footer>
         </div>
     )

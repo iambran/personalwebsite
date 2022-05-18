@@ -475,6 +475,10 @@ $maxContentWidth: 70ch;
     margin-top: 10rem;
   }
 
+  small {
+    opacity: .8;
+  }
+
   p {
     width: min(100%, 75vh);
   }
@@ -488,6 +492,29 @@ $maxContentWidth: 70ch;
     }
 
   }
+}
+
+.resume {
+  h1 {
+    text-transform: uppercase;
+  }
+  h2 {
+    margin-bottom: 1rem;
+    margin-top: 6rem;
+    opacity: .7;
+  }
+  p {
+    width: auto;
+  }
+  section {
+    padding-block: 2.2rem 1rem;
+    border-top: 1px solid var(--dark-theme-border-color, #e2e2e2);
+    div {
+      font-weight: bold;
+      font-size: 2.6rem;
+    }
+  }
+  margin-bottom: 8rem;
 }
 
 .postDetails {

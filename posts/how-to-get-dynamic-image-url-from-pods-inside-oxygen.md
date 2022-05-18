@@ -48,3 +48,15 @@ Function Arguments: `product_photo,src`（两个之间不要有空格）。
 <img src="https://res.cloudinary.com/brandonzhang/image/upload/v1640767314/brandonzhang.cn/Screenshot_2021-12-29_at_4.41.18_PM_anwyq6.png" alt="oxygen php function return value">
 
 然后点击Insert就可以看到product_photo的图片已经成功添加进来了。
+
+如果创建的Content Type是Custom Settings Page。
+
+```php
+
+// 开头的ss只是我随意添加的，为了保证不和其他代码冲突
+function ss_get_pod_field_data( $field_name, $property ) {
+	// website_info即是设置页面的content type name
+	return pods('website_info')->field( "{$field_name}" . '._' . "{$property}" );
+}
+
+```
